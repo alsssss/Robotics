@@ -1,0 +1,15 @@
+<launch>
+    <!-- Nodo per il movimento del drone -->
+    <node pkg="carla_ros_bridge" type="drone_mov_slam2.py" name="drone" output="screen" />
+   
+   
+    <!-- Nodo per il modificare dati lidar -->
+    <node pkg="carla_ros_bridge" type="lio_node1.py" name="lio_lidar" output="screen" />  
+    
+    <!-- Nodo per il controllare dati lidar --> 
+    <!-- <node pkg="carla_ros_bridge" type="check_lio_lidar.py" name="lio_lidar_check" output="screen" />    -->
+   
+    <!-- Nodo per avviare RViz con il file di configurazione specifico -->
+    <node pkg="rviz" type="rviz" name="rviz" output="screen" args="-d $(find rviz_config)/config/config_file.rviz" />
+</launch>
+

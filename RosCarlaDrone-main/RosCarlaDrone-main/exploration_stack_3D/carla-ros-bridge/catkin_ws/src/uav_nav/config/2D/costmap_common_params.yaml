@@ -1,0 +1,12 @@
+obstacle_range: 15.0  # Aumenta se gli ostacoli sono troppo lontani per essere rilevati
+raytrace_range: 6.0
+footprint: [[-0.3, -0.3], [-0.3, 0.3], [0.3, 0.3], [0.3, -0.3]]  # Forma del robot
+inflation_radius: 0.55  # Spazio intorno agli ostacoli
+observation_sources: point_cloud_sensor
+
+point_cloud_sensor:
+  sensor_frame: base_link
+  data_type: PointCloud2
+  topic: carla/base_link/lidar
+  marking: true
+  clearing: true

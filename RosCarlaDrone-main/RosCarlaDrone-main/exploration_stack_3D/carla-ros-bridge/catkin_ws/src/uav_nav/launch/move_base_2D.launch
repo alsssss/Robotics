@@ -1,0 +1,12 @@
+<launch>
+    <param name="use_sim_time" value="true"/>
+
+    <node pkg="move_base" type="move_base" name="move_base" output="screen">
+        <rosparam file="$(find uav_nav)/config/2D/costmap_common_params.yaml" command="load" ns="global_costmap"/>
+        <rosparam file="$(find uav_nav)/config/2D/costmap_common_params.yaml" command="load" ns="local_costmap"/>
+        <rosparam file="$(find uav_nav)/config/2D/local_costmap_params.yaml" command="load"/>
+        <rosparam file="$(find uav_nav)/config/2D/global_costmap_params.yaml" command="load"/>
+        <rosparam file="$(find uav_nav)/config/2D/local_planner_params.yaml" command="load"/>
+        <rosparam file="$(find uav_nav)/config/2D/move_base_params.yaml" command="load"/>
+    </node>
+</launch>

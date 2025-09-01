@@ -1,0 +1,27 @@
+<launch>
+
+  <node name="cartographer_node" pkg="cartographer_ros" type="cartographer_node" args="-configuration_directory $(find cartographer_ros)/configuration_files -configuration_basename drone_2d.lua" output="screen">
+    <remap from="imu" to="/carla/base_link/default" />
+    <remap from="points2" to="/carla/base_link/front" />
+  </node>
+  
+  
+  <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros" type="cartographer_occupancy_grid_node" args="-resolution 0.1" >
+    <remap from="map" to="cmap" />
+  </node>
+	
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find cartographer_ros)/configuration_files/drone_2d_planning.rviz" />
+  
+  <!-- Nodo per creare topic /map_updates (necessario per explore_lite) -->
+  <!-- <node pkg="carla_ros_bridge" type="map_update.py" name="map_updater" output="screen" /> -->
+  
+  <!-- Nodo per creare topic /odom (necessario per move_base) -->
+  <node pkg="carla_ros_bridge" type="odometry.py" name="odom_uploader" output="screen" />
+  
+  <!-- Nodo per creare topic mappa in formato gmap  -->
+  <node pkg="carla_ros_bridge" type="cmapping.py" name="cmapping" output="screen" />
+  
+  
+  
+</launch>

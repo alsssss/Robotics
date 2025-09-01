@@ -1,0 +1,7 @@
+base_global_planner: global_planner/GlobalPlanner
+base_local_planner: base_local_planner/TrajectoryPlannerROS
+
+controller_frequency: 5.0
+planner_frequency: 1.0
+recovery_behavior_enabled: true
+clearing_rotation_allowed: true

@@ -1,0 +1,22 @@
+<launch>
+    <!-- Nodo per il movimento del drone -->
+    <node pkg="carla_ros_bridge" type="drone_mov_slam.py" name="drone" output="screen" />
+    
+    
+    <!-- Nodo per il filtro del lidar -->
+    <!--<node pkg="carla_ros_bridge" type="lidar_filter.py" name="filter" output="screen" /> -->
+    
+    
+    <!-- Nodo per la pubblicazione della traiettoria -->
+    <!--<node pkg="carla_ros_bridge" type="trajectory.py" name="trajectory_publisher" output="screen" /> -->
+
+
+    <!-- Nodo per il controllore PID -->
+    <!--<node pkg="carla_ros_bridge" type="pid.py" name="pid_velocity_controller" output="screen" /> -->
+    
+   
+
+    <!-- Nodo per avviare RViz con il file di configurazione specifico -->
+    <node pkg="rviz" type="rviz" name="rviz" output="screen" args="-d $(find rviz_config)/config/config_file.rviz" />
+</launch>
+

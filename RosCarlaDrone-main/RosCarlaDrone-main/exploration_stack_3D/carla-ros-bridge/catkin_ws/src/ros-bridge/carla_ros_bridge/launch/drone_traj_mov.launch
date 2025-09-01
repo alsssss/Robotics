@@ -1,0 +1,14 @@
+<!-- -->
+<launch>
+
+    <!-- Nodo per la pubblicazione della traiettoria -->
+    <node pkg="carla_ros_bridge" type="trajectory.py" name="trajectory_publisher" output="screen" />
+
+    <!-- Nodo per il movimento del drone -->
+    <node pkg="carla_ros_bridge" type="drone_mov.py" name="spectator" output="screen" />
+
+    <!-- Nodo per il controllore PID -->
+    <node pkg="carla_ros_bridge" type="pid.py" name="pid_velocity_controller" output="screen" />
+    
+
+</launch>

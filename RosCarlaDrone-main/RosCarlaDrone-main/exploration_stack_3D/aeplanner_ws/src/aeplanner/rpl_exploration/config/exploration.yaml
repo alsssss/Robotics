@@ -1,0 +1,42 @@
+# Parametri della camera
+camera/horizontal_fov: 85.0
+camera/vertical_fov: 58.0
+
+# Parametri del raycasting
+raycast/dr:     1
+raycast/dphi:   5
+raycast/dtheta: 5
+
+# Bounding box locale per la pianificazione
+system/bbx/r: 1.5                   # Maggiore raggio per esplorazione locale
+system/bbx/overshoot: 0.3          # Più tolleranza per evitare blocchi
+
+# Parametri di gain (valutazione dei punti di vista)
+aep/gain/r_min: 0
+aep/gain/r_max: 75                 # Esplora più lontano
+aep/gain/zero: 25
+aep/gain/lambda: 0.3               # Favorisce movimento rapido
+aep/gain/sigma_thresh: 0.2         # Include voxel meno incerti per maggiore copertura
+
+# Parametri dell'albero RRT
+aep/tree/extension_range: 4
+aep/tree/max_sampling_radius: 50
+aep/tree/initial_iterations: 10
+aep/tree/cutoff_iterations: 150   # Maggiore tolleranza per trovare nuovi punti
+
+# RRT
+rrt/min_nodes: 100                # Mantiene l'efficienza senza bloccare la pianificazione
+
+# Limiti dell’ambiente simulato
+boundary/min: [-500.0, -500.0, -2.0]
+boundary/max: [ 500.0,  500.0, 5.0]
+
+# Visualizzazione
+visualize_rays: true              # Attivo per debug e visibilità dei raggi
+visualize_tree: true
+visualize_exploration_area: true
+
+# Frame di riferimento
+robot_frame: "base_link"
+world_frame: "map"
+

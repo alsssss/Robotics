@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<launch>
+  <arg name="param_file" default="$(find rpl_exploration)/config/exploration.yaml" />
+
+
+  <group ns="aeplanner">
+
+
+    <include file="$(find aeplanner)/launch/aeplanner_nodelet.launch"/>
+    <include file="$(find pigain)/launch/pig.launch"/>
+    <include file="$(find rpl_exploration)/launch/fly_to.launch"/>
+    <include file="$(find rpl_exploration)/launch/octomap_server.launch"/>
+    <include file="$(find rrtplanner)/launch/rrtplanner.launch"/>
+
+    <node name="rpl_exploration" pkg="rpl_exploration" type="rpl_exploration" output="screen" />
+    <rosparam command="load" file="$(arg param_file)" />
+  </group>
+
+
+
+	<!-- Nodo per aggiungere il frame 'map' al punto generato -->
+    <node pkg="carla_ros_bridge" type="point_gen.py" name="point_node" output="screen" />
+    <!-- Nodo per generare path del drone su rviz -->
+    <node pkg="carla_ros_bridge" type="path.py" name="path_node" output="screen" />
+
+
+	<!-- Nodo per il PID del drone -->
+    <node pkg="carla_ros_bridge" type="pid2.py" name="pid" output="screen" />
+
+</launch>

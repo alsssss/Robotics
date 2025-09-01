@@ -1,0 +1,23 @@
+<launch>
+
+  <node name="cartographer_node" pkg="cartographer_ros" type="cartographer_node" args="-configuration_directory $(find cartographer_ros)/configuration_files -configuration_basename drone_3d.lua" output="screen">
+    <remap from="imu" to="/carla/base_link/imu" />
+    <remap from="points2" to="/carla/base_link/lidar" />
+  </node>
+	
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find cartographer_ros)/configuration_files/drone_3d_planning.rviz" />
+  
+
+  
+  <!-- Nodo per creare topic /odom (necessario per move_base) -->
+  <node pkg="carla_ros_bridge" type="odometry.py" name="odom_uploader" output="screen" />
+  
+  <!-- Nodo per creare topic /tfStamped (necessario per move_base) -->
+  <node pkg="carla_ros_bridge" type="tfStamping.py" name="tf_stamper" output="screen" />
+  
+
+  
+  
+  
+</launch>
