@@ -1,0 +1,21 @@
+[0.136s] Invoking command in '/home/alex/ros2_ws/src/build/uuv_world_plugins': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_world_plugins/uuv_world_plugins -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_world_plugins
+[0.196s] -- Configuring incomplete, errors occurred!
+[0.196s] See also "/home/alex/ros2_ws/src/build/uuv_world_plugins/CMakeFiles/CMakeOutput.log".
+[0.215s] CMake Error at CMakeLists.txt:13 (find_package):
+[0.218s]   By not providing "Findgazebo_dev.cmake" in CMAKE_MODULE_PATH this project
+[0.218s]   has asked CMake to find a package configuration file provided by
+[0.219s]   "gazebo_dev", but CMake did not find one.
+[0.219s] 
+[0.220s]   Could not find a package configuration file provided by "gazebo_dev" with
+[0.221s]   any of the following names:
+[0.221s] 
+[0.222s]     gazebo_devConfig.cmake
+[0.222s]     gazebo_dev-config.cmake
+[0.222s] 
+[0.223s]   Add the installation prefix of "gazebo_dev" to CMAKE_PREFIX_PATH or set
+[0.223s]   "gazebo_dev_DIR" to a directory containing one of the above files.  If
+[0.223s]   "gazebo_dev" provides a separate development package or SDK, be sure it has
+[0.223s]   been installed.
+[0.224s] 
+[0.224s] 
+[0.231s] Invoked command in '/home/alex/ros2_ws/src/build/uuv_world_plugins' returned '1': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_world_plugins/uuv_world_plugins -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_world_plugins

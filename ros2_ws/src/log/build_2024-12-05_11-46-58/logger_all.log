@@ -1,0 +1,805 @@
+[0.145s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-up-to', 'plankton']
+[0.145s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ffb867ccdc0>>, merge_install=False, metas=['./colcon.meta'], mixin=None, mixin_files=None, mixin_verb=('build',), packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=['plankton'], packages_up_to_regex=None, parallel_workers=16, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ffb867ccdc0>, verb_name='build', verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7ffb8675c3a0>)
+[0.258s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.258s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.258s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.258s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.258s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.258s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.258s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/alex/ros2_ws/src'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton) by extensions ['ignore', 'ignore_ament_install']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton) by extension 'ignore'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton) by extension 'ignore_ament_install'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton) by extensions ['colcon_pkg']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton) by extension 'colcon_pkg'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton) by extensions ['colcon_meta']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton) by extension 'colcon_meta'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton) by extensions ['ros']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton) by extension 'ros'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton) by extensions ['cmake', 'python']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton) by extension 'cmake'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton) by extension 'python'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton) by extensions ['python_setup_py']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton) by extension 'python_setup_py'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/plankton) by extensions ['ignore', 'ignore_ament_install']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/plankton) by extension 'ignore'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/plankton) by extension 'ignore_ament_install'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/plankton) by extensions ['colcon_pkg']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/plankton) by extension 'colcon_pkg'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/plankton) by extensions ['colcon_meta']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/plankton) by extension 'colcon_meta'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/plankton) by extensions ['ros']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/plankton) by extension 'ros'
+[0.272s] DEBUG:colcon.colcon_core.package_identification:Package 'Plankton/plankton' with type 'ros.ament_cmake' and name 'plankton'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/plankton_utils) by extensions ['ignore', 'ignore_ament_install']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/plankton_utils) by extension 'ignore'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/plankton_utils) by extension 'ignore_ament_install'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/plankton_utils) by extensions ['colcon_pkg']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/plankton_utils) by extension 'colcon_pkg'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/plankton_utils) by extensions ['colcon_meta']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/plankton_utils) by extension 'colcon_meta'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/plankton_utils) by extensions ['ros']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/plankton_utils) by extension 'ros'
+[0.273s] DEBUG:colcon.colcon_core.package_identification:Package 'Plankton/plankton_utils' with type 'ros.ament_cmake' and name 'plankton_utils'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/tools) by extensions ['ignore', 'ignore_ament_install']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/tools) by extension 'ignore'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/tools) by extension 'ignore_ament_install'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/tools) by extensions ['colcon_pkg']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/tools) by extension 'colcon_pkg'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/tools) by extensions ['colcon_meta']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/tools) by extension 'colcon_meta'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/tools) by extensions ['ros']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/tools) by extension 'ros'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/tools) by extensions ['cmake', 'python']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/tools) by extension 'cmake'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/tools) by extension 'python'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/tools) by extensions ['python_setup_py']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/tools) by extension 'python_setup_py'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/user_needs) by extensions ['ignore', 'ignore_ament_install']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/user_needs) by extension 'ignore'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/user_needs) by extension 'ignore_ament_install'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/user_needs) by extensions ['colcon_pkg']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/user_needs) by extension 'colcon_pkg'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/user_needs) by extensions ['colcon_meta']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/user_needs) by extension 'colcon_meta'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/user_needs) by extensions ['ros']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/user_needs) by extension 'ros'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/user_needs) by extensions ['cmake', 'python']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/user_needs) by extension 'cmake'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/user_needs) by extension 'python'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/user_needs) by extensions ['python_setup_py']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/user_needs) by extension 'python_setup_py'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_assistants) by extensions ['ignore', 'ignore_ament_install']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_assistants) by extension 'ignore'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_assistants) by extension 'ignore_ament_install'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_assistants) by extensions ['colcon_pkg']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_assistants) by extension 'colcon_pkg'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_assistants) by extensions ['colcon_meta']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_assistants) by extension 'colcon_meta'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_assistants) by extensions ['ros']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_assistants) by extension 'ros'
+[0.276s] DEBUG:colcon.colcon_core.package_identification:Package 'Plankton/uuv_assistants' with type 'ros.ament_cmake' and name 'uuv_assistants'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control) by extensions ['ignore', 'ignore_ament_install']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control) by extension 'ignore'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control) by extension 'ignore_ament_install'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control) by extensions ['colcon_pkg']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control) by extension 'colcon_pkg'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control) by extensions ['colcon_meta']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control) by extension 'colcon_meta'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control) by extensions ['ros']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control) by extension 'ros'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control) by extensions ['cmake', 'python']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control) by extension 'cmake'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control) by extension 'python'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control) by extensions ['python_setup_py']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control) by extension 'python_setup_py'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_auv_control_allocator) by extensions ['ignore', 'ignore_ament_install']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_auv_control_allocator) by extension 'ignore'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_auv_control_allocator) by extension 'ignore_ament_install'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_auv_control_allocator) by extensions ['colcon_pkg']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_auv_control_allocator) by extension 'colcon_pkg'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_auv_control_allocator) by extensions ['colcon_meta']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_auv_control_allocator) by extension 'colcon_meta'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_auv_control_allocator) by extensions ['ros']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_auv_control_allocator) by extension 'ros'
+[0.278s] DEBUG:colcon.colcon_core.package_identification:Package 'Plankton/uuv_control/uuv_auv_control_allocator' with type 'ros.ament_cmake' and name 'uuv_auv_control_allocator'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_control_cascaded_pids) by extensions ['ignore', 'ignore_ament_install']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_control_cascaded_pids) by extension 'ignore'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_control_cascaded_pids) by extension 'ignore_ament_install'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_control_cascaded_pids) by extensions ['colcon_pkg']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_control_cascaded_pids) by extension 'colcon_pkg'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_control_cascaded_pids) by extensions ['colcon_meta']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_control_cascaded_pids) by extension 'colcon_meta'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_control_cascaded_pids) by extensions ['ros']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_control_cascaded_pids) by extension 'ros'
+[0.279s] DEBUG:colcon.colcon_core.package_identification:Package 'Plankton/uuv_control/uuv_control_cascaded_pids' with type 'ros.ament_cmake' and name 'uuv_control_cascaded_pid'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_control_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_control_msgs) by extension 'ignore'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_control_msgs) by extension 'ignore_ament_install'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_control_msgs) by extensions ['colcon_pkg']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_control_msgs) by extension 'colcon_pkg'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_control_msgs) by extensions ['colcon_meta']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_control_msgs) by extension 'colcon_meta'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_control_msgs) by extensions ['ros']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_control_msgs) by extension 'ros'
+[0.281s] DEBUG:colcon.colcon_core.package_identification:Package 'Plankton/uuv_control/uuv_control_msgs' with type 'ros.ament_cmake' and name 'uuv_control_msgs'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_control_utils) by extensions ['ignore', 'ignore_ament_install']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_control_utils) by extension 'ignore'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_control_utils) by extension 'ignore_ament_install'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_control_utils) by extensions ['colcon_pkg']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_control_utils) by extension 'colcon_pkg'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_control_utils) by extensions ['colcon_meta']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_control_utils) by extension 'colcon_meta'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_control_utils) by extensions ['ros']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_control_utils) by extension 'ros'
+[0.282s] DEBUG:colcon.colcon_core.package_identification:Package 'Plankton/uuv_control/uuv_control_utils' with type 'ros.ament_cmake' and name 'uuv_control_utils'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_thruster_manager) by extensions ['ignore', 'ignore_ament_install']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_thruster_manager) by extension 'ignore'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_thruster_manager) by extension 'ignore_ament_install'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_thruster_manager) by extensions ['colcon_pkg']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_thruster_manager) by extension 'colcon_pkg'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_thruster_manager) by extensions ['colcon_meta']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_thruster_manager) by extension 'colcon_meta'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_thruster_manager) by extensions ['ros']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_thruster_manager) by extension 'ros'
+[0.283s] DEBUG:colcon.colcon_core.package_identification:Package 'Plankton/uuv_control/uuv_thruster_manager' with type 'ros.ament_cmake' and name 'uuv_thruster_manager'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_trajectory_control) by extensions ['ignore', 'ignore_ament_install']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_trajectory_control) by extension 'ignore'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_trajectory_control) by extension 'ignore_ament_install'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_trajectory_control) by extensions ['colcon_pkg']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_trajectory_control) by extension 'colcon_pkg'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_trajectory_control) by extensions ['colcon_meta']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_trajectory_control) by extension 'colcon_meta'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_trajectory_control) by extensions ['ros']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_control/uuv_trajectory_control) by extension 'ros'
+[0.284s] DEBUG:colcon.colcon_core.package_identification:Package 'Plankton/uuv_control/uuv_trajectory_control' with type 'ros.ament_cmake' and name 'uuv_trajectory_control'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_descriptions) by extensions ['ignore', 'ignore_ament_install']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_descriptions) by extension 'ignore'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_descriptions) by extension 'ignore_ament_install'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_descriptions) by extensions ['colcon_pkg']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_descriptions) by extension 'colcon_pkg'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_descriptions) by extensions ['colcon_meta']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_descriptions) by extension 'colcon_meta'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_descriptions) by extensions ['ros']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_descriptions) by extension 'ros'
+[0.286s] DEBUG:colcon.colcon_core.package_identification:Package 'Plankton/uuv_descriptions' with type 'ros.ament_cmake' and name 'uuv_descriptions'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo) by extension 'ignore'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo) by extension 'ignore_ament_install'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo) by extensions ['colcon_pkg']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo) by extension 'colcon_pkg'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo) by extensions ['colcon_meta']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo) by extension 'colcon_meta'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo) by extensions ['ros']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo) by extension 'ros'
+[0.287s] DEBUG:colcon.colcon_core.package_identification:Package 'Plankton/uuv_gazebo' with type 'ros.ament_cmake' and name 'uuv_gazebo'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins) by extension 'ignore'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins) by extension 'ignore_ament_install'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins) by extensions ['colcon_pkg']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins) by extension 'colcon_pkg'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins) by extensions ['colcon_meta']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins) by extension 'colcon_meta'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins) by extensions ['ros']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins) by extension 'ros'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins) by extensions ['cmake', 'python']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins) by extension 'cmake'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins) by extension 'python'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins) by extensions ['python_setup_py']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins) by extension 'python_setup_py'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins/uuv_gazebo_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins/uuv_gazebo_plugins) by extension 'ignore'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins/uuv_gazebo_plugins) by extension 'ignore_ament_install'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins/uuv_gazebo_plugins) by extensions ['colcon_pkg']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins/uuv_gazebo_plugins) by extension 'colcon_pkg'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins/uuv_gazebo_plugins) by extensions ['colcon_meta']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins/uuv_gazebo_plugins) by extension 'colcon_meta'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins/uuv_gazebo_plugins) by extensions ['ros']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins/uuv_gazebo_plugins) by extension 'ros'
+[0.289s] DEBUG:colcon.colcon_core.package_identification:Package 'Plankton/uuv_gazebo_plugins/uuv_gazebo_plugins' with type 'ros.ament_cmake' and name 'uuv_gazebo_plugins'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins) by extension 'ignore'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins) by extension 'ignore_ament_install'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins) by extensions ['colcon_pkg']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins) by extension 'colcon_pkg'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins) by extensions ['colcon_meta']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins) by extension 'colcon_meta'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins) by extensions ['ros']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins) by extension 'ros'
+[0.292s] DEBUG:colcon.colcon_core.package_identification:Package 'Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins' with type 'ros.ament_cmake' and name 'uuv_gazebo_ros_plugins'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs) by extension 'ignore'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs) by extension 'ignore_ament_install'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs) by extensions ['colcon_pkg']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs) by extension 'colcon_pkg'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs) by extensions ['colcon_meta']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs) by extension 'colcon_meta'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs) by extensions ['ros']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs) by extension 'ros'
+[0.293s] DEBUG:colcon.colcon_core.package_identification:Package 'Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs' with type 'ros.ament_cmake' and name 'uuv_gazebo_ros_plugins_msgs'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_worlds) by extensions ['ignore', 'ignore_ament_install']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_worlds) by extension 'ignore'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_worlds) by extension 'ignore_ament_install'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_worlds) by extensions ['colcon_pkg']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_worlds) by extension 'colcon_pkg'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_worlds) by extensions ['colcon_meta']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_worlds) by extension 'colcon_meta'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_worlds) by extensions ['ros']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_gazebo_worlds) by extension 'ros'
+[0.294s] DEBUG:colcon.colcon_core.package_identification:Package 'Plankton/uuv_gazebo_worlds' with type 'ros.ament_cmake' and name 'uuv_gazebo_worlds'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins) by extension 'ignore'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins) by extension 'ignore_ament_install'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins) by extensions ['colcon_pkg']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins) by extension 'colcon_pkg'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins) by extensions ['colcon_meta']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins) by extension 'colcon_meta'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins) by extensions ['ros']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins) by extension 'ros'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins) by extensions ['cmake', 'python']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins) by extension 'cmake'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins) by extension 'python'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins) by extensions ['python_setup_py']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins) by extension 'python_setup_py'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins) by extension 'ignore'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins) by extension 'ignore_ament_install'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins) by extensions ['colcon_pkg']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins) by extension 'colcon_pkg'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins) by extensions ['colcon_meta']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins) by extension 'colcon_meta'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins) by extensions ['ros']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins) by extension 'ros'
+[0.297s] DEBUG:colcon.colcon_core.package_identification:Package 'Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins' with type 'ros.ament_cmake' and name 'uuv_sensor_ros_plugins'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs) by extension 'ignore'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs) by extension 'ignore_ament_install'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs) by extensions ['colcon_pkg']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs) by extension 'colcon_pkg'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs) by extensions ['colcon_meta']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs) by extension 'colcon_meta'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs) by extensions ['ros']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs) by extension 'ros'
+[0.298s] DEBUG:colcon.colcon_core.package_identification:Package 'Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs' with type 'ros.ament_cmake' and name 'uuv_sensor_ros_plugins_msgs'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_simulator) by extensions ['ignore', 'ignore_ament_install']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_simulator) by extension 'ignore'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_simulator) by extension 'ignore_ament_install'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_simulator) by extensions ['colcon_pkg']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_simulator) by extension 'colcon_pkg'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_simulator) by extensions ['colcon_meta']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_simulator) by extension 'colcon_meta'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_simulator) by extensions ['ros']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_simulator) by extension 'ros'
+[0.299s] DEBUG:colcon.colcon_core.package_identification:Package 'Plankton/uuv_simulator' with type 'ros.ament_cmake' and name 'uuv_simulator'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_teleop) by extensions ['ignore', 'ignore_ament_install']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_teleop) by extension 'ignore'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_teleop) by extension 'ignore_ament_install'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_teleop) by extensions ['colcon_pkg']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_teleop) by extension 'colcon_pkg'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_teleop) by extensions ['colcon_meta']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_teleop) by extension 'colcon_meta'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_teleop) by extensions ['ros']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_teleop) by extension 'ros'
+[0.300s] DEBUG:colcon.colcon_core.package_identification:Package 'Plankton/uuv_teleop' with type 'ros.ament_cmake' and name 'uuv_teleop'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials) by extensions ['ignore', 'ignore_ament_install']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials) by extension 'ignore'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials) by extension 'ignore_ament_install'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials) by extensions ['colcon_pkg']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials) by extension 'colcon_pkg'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials) by extensions ['colcon_meta']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials) by extension 'colcon_meta'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials) by extensions ['ros']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials) by extension 'ros'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials) by extensions ['cmake', 'python']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials) by extension 'cmake'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials) by extension 'python'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials) by extensions ['python_setup_py']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials) by extension 'python_setup_py'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_disturbances) by extensions ['ignore', 'ignore_ament_install']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_disturbances) by extension 'ignore'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_disturbances) by extension 'ignore_ament_install'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_disturbances) by extensions ['colcon_pkg']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_disturbances) by extension 'colcon_pkg'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_disturbances) by extensions ['colcon_meta']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_disturbances) by extension 'colcon_meta'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_disturbances) by extensions ['ros']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_disturbances) by extension 'ros'
+[0.302s] DEBUG:colcon.colcon_core.package_identification:Package 'Plankton/uuv_tutorials/uuv_tutorial_disturbances' with type 'ros.ament_cmake' and name 'uuv_tutorial_disturbances'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_dp_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_dp_controller) by extension 'ignore'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_dp_controller) by extension 'ignore_ament_install'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_dp_controller) by extensions ['colcon_pkg']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_dp_controller) by extension 'colcon_pkg'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_dp_controller) by extensions ['colcon_meta']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_dp_controller) by extension 'colcon_meta'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_dp_controller) by extensions ['ros']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_dp_controller) by extension 'ros'
+[0.303s] DEBUG:colcon.colcon_core.package_identification:Package 'Plankton/uuv_tutorials/uuv_tutorial_dp_controller' with type 'ros.ament_cmake' and name 'uuv_tutorial_dp_controller'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_rov_model) by extensions ['ignore', 'ignore_ament_install']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_rov_model) by extension 'ignore'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_rov_model) ignored
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_seabed_world) by extensions ['ignore', 'ignore_ament_install']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_seabed_world) by extension 'ignore'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_seabed_world) by extension 'ignore_ament_install'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_seabed_world) by extensions ['colcon_pkg']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_seabed_world) by extension 'colcon_pkg'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_seabed_world) by extensions ['colcon_meta']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_seabed_world) by extension 'colcon_meta'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_seabed_world) by extensions ['ros']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorial_seabed_world) by extension 'ros'
+[0.305s] DEBUG:colcon.colcon_core.package_identification:Package 'Plankton/uuv_tutorials/uuv_tutorial_seabed_world' with type 'ros.ament_cmake' and name 'uuv_tutorial_seabed_world'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorials) by extensions ['ignore', 'ignore_ament_install']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorials) by extension 'ignore'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorials) by extension 'ignore_ament_install'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorials) by extensions ['colcon_pkg']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorials) by extension 'colcon_pkg'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorials) by extensions ['colcon_meta']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorials) by extension 'colcon_meta'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorials) by extensions ['ros']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_tutorials/uuv_tutorials) by extension 'ros'
+[0.306s] DEBUG:colcon.colcon_core.package_identification:Package 'Plankton/uuv_tutorials/uuv_tutorials' with type 'ros.ament_cmake' and name 'uuv_tutorials'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins) by extension 'ignore'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins) by extension 'ignore_ament_install'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins) by extensions ['colcon_pkg']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins) by extension 'colcon_pkg'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins) by extensions ['colcon_meta']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins) by extension 'colcon_meta'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins) by extensions ['ros']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins) by extension 'ros'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins) by extensions ['cmake', 'python']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins) by extension 'cmake'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins) by extension 'python'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins) by extensions ['python_setup_py']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins) by extension 'python_setup_py'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins/uuv_world_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins/uuv_world_plugins) by extension 'ignore'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins/uuv_world_plugins) by extension 'ignore_ament_install'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins/uuv_world_plugins) by extensions ['colcon_pkg']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins/uuv_world_plugins) by extension 'colcon_pkg'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins/uuv_world_plugins) by extensions ['colcon_meta']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins/uuv_world_plugins) by extension 'colcon_meta'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins/uuv_world_plugins) by extensions ['ros']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins/uuv_world_plugins) by extension 'ros'
+[0.307s] DEBUG:colcon.colcon_core.package_identification:Package 'Plankton/uuv_world_plugins/uuv_world_plugins' with type 'ros.ament_cmake' and name 'uuv_world_plugins'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins/uuv_world_ros_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins/uuv_world_ros_plugins) by extension 'ignore'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins/uuv_world_ros_plugins) by extension 'ignore_ament_install'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins/uuv_world_ros_plugins) by extensions ['colcon_pkg']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins/uuv_world_ros_plugins) by extension 'colcon_pkg'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins/uuv_world_ros_plugins) by extensions ['colcon_meta']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins/uuv_world_ros_plugins) by extension 'colcon_meta'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins/uuv_world_ros_plugins) by extensions ['ros']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins/uuv_world_ros_plugins) by extension 'ros'
+[0.309s] DEBUG:colcon.colcon_core.package_identification:Package 'Plankton/uuv_world_plugins/uuv_world_ros_plugins' with type 'ros.ament_cmake' and name 'uuv_world_ros_plugins'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins/uuv_world_ros_plugins_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins/uuv_world_ros_plugins_msgs) by extension 'ignore'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins/uuv_world_ros_plugins_msgs) by extension 'ignore_ament_install'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins/uuv_world_ros_plugins_msgs) by extensions ['colcon_pkg']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins/uuv_world_ros_plugins_msgs) by extension 'colcon_pkg'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins/uuv_world_ros_plugins_msgs) by extensions ['colcon_meta']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins/uuv_world_ros_plugins_msgs) by extension 'colcon_meta'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins/uuv_world_ros_plugins_msgs) by extensions ['ros']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(Plankton/uuv_world_plugins/uuv_world_ros_plugins_msgs) by extension 'ros'
+[0.310s] DEBUG:colcon.colcon_core.package_identification:Package 'Plankton/uuv_world_plugins/uuv_world_ros_plugins_msgs' with type 'ros.ament_cmake' and name 'uuv_world_ros_plugins_msgs'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(sam_bot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(sam_bot_description) by extension 'ignore'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(sam_bot_description) by extension 'ignore_ament_install'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(sam_bot_description) by extensions ['colcon_pkg']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(sam_bot_description) by extension 'colcon_pkg'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(sam_bot_description) by extensions ['colcon_meta']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(sam_bot_description) by extension 'colcon_meta'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(sam_bot_description) by extensions ['ros']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(sam_bot_description) by extension 'ros'
+[0.311s] DEBUG:colcon.colcon_core.package_identification:Package 'sam_bot_description' with type 'ros.ament_cmake' and name 'sam_bot_description'
+[0.312s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.312s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.312s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.312s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.312s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.334s] INFO:colcon.colcon_core.package_selection:Skipping package 'uuv_tutorials' in 'Plankton/uuv_tutorials/uuv_tutorials'
+[0.334s] INFO:colcon.colcon_core.package_selection:Skipping package 'uuv_tutorial_dp_controller' in 'Plankton/uuv_tutorials/uuv_tutorial_dp_controller'
+[0.334s] INFO:colcon.colcon_core.package_selection:Skipping package 'uuv_tutorial_disturbances' in 'Plankton/uuv_tutorials/uuv_tutorial_disturbances'
+[0.334s] INFO:colcon.colcon_core.package_selection:Skipping package 'uuv_tutorial_seabed_world' in 'Plankton/uuv_tutorials/uuv_tutorial_seabed_world'
+[0.334s] INFO:colcon.colcon_core.package_selection:Skipping package 'sam_bot_description' in 'sam_bot_description'
+[0.334s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.334s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.335s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'plankton_utils' build argument 'cmake_args' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'plankton_utils' build argument 'cmake_target' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'plankton_utils' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'plankton_utils' build argument 'cmake_clean_cache' from command line to 'False'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'plankton_utils' build argument 'cmake_clean_first' from command line to 'False'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'plankton_utils' build argument 'cmake_force_configure' from command line to 'False'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'plankton_utils' build argument 'ament_cmake_args' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'plankton_utils' build argument 'catkin_cmake_args' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'plankton_utils' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.337s] DEBUG:colcon.colcon_core.verb:Building package 'plankton_utils' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alex/ros2_ws/src/build/plankton_utils', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alex/ros2_ws/src/install/plankton_utils', 'merge_install': False, 'path': '/home/alex/ros2_ws/src/Plankton/plankton_utils', 'symlink_install': False, 'test_result_base': None}
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'uuv_control_msgs' build argument 'cmake_args' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'uuv_control_msgs' build argument 'cmake_target' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'uuv_control_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'uuv_control_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'uuv_control_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'uuv_control_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'uuv_control_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'uuv_control_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'uuv_control_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.338s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_control_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alex/ros2_ws/src/build/uuv_control_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alex/ros2_ws/src/install/uuv_control_msgs', 'merge_install': False, 'path': '/home/alex/ros2_ws/src/Plankton/uuv_control/uuv_control_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.338s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alex/ros2_ws/src/build/uuv_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alex/ros2_ws/src/install/uuv_gazebo', 'merge_install': False, 'path': '/home/alex/ros2_ws/src/Plankton/uuv_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_plugins' build argument 'cmake_args' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_plugins' build argument 'cmake_target' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_plugins' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_plugins' build argument 'cmake_clean_cache' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_plugins' build argument 'cmake_clean_first' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_plugins' build argument 'cmake_force_configure' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_plugins' build argument 'ament_cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_plugins' build argument 'catkin_cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_plugins' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.339s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_gazebo_plugins' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alex/ros2_ws/src/build/uuv_gazebo_plugins', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alex/ros2_ws/src/install/uuv_gazebo_plugins', 'merge_install': False, 'path': '/home/alex/ros2_ws/src/Plankton/uuv_gazebo_plugins/uuv_gazebo_plugins', 'symlink_install': False, 'test_result_base': None}
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins_msgs' build argument 'cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins_msgs' build argument 'cmake_target' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.339s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_gazebo_ros_plugins_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alex/ros2_ws/src/build/uuv_gazebo_ros_plugins_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins_msgs', 'merge_install': False, 'path': '/home/alex/ros2_ws/src/Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_worlds' build argument 'cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_worlds' build argument 'cmake_target' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_worlds' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_worlds' build argument 'cmake_clean_cache' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_worlds' build argument 'cmake_clean_first' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_worlds' build argument 'cmake_force_configure' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_worlds' build argument 'ament_cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_worlds' build argument 'catkin_cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_worlds' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.340s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_gazebo_worlds' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alex/ros2_ws/src/build/uuv_gazebo_worlds', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alex/ros2_ws/src/install/uuv_gazebo_worlds', 'merge_install': False, 'path': '/home/alex/ros2_ws/src/Plankton/uuv_gazebo_worlds', 'symlink_install': False, 'test_result_base': None}
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins_msgs' build argument 'cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins_msgs' build argument 'cmake_target' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.340s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_sensor_ros_plugins_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alex/ros2_ws/src/build/uuv_sensor_ros_plugins_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alex/ros2_ws/src/install/uuv_sensor_ros_plugins_msgs', 'merge_install': False, 'path': '/home/alex/ros2_ws/src/Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_plugins' build argument 'cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_plugins' build argument 'cmake_target' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_plugins' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_plugins' build argument 'cmake_clean_cache' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_plugins' build argument 'cmake_clean_first' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_plugins' build argument 'cmake_force_configure' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_plugins' build argument 'ament_cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_plugins' build argument 'catkin_cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_plugins' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.341s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_world_plugins' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alex/ros2_ws/src/build/uuv_world_plugins', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alex/ros2_ws/src/install/uuv_world_plugins', 'merge_install': False, 'path': '/home/alex/ros2_ws/src/Plankton/uuv_world_plugins/uuv_world_plugins', 'symlink_install': False, 'test_result_base': None}
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_ros_plugins_msgs' build argument 'cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_ros_plugins_msgs' build argument 'cmake_target' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_ros_plugins_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_ros_plugins_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_ros_plugins_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_ros_plugins_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_ros_plugins_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_ros_plugins_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_ros_plugins_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.341s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_world_ros_plugins_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alex/ros2_ws/src/build/uuv_world_ros_plugins_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alex/ros2_ws/src/install/uuv_world_ros_plugins_msgs', 'merge_install': False, 'path': '/home/alex/ros2_ws/src/Plankton/uuv_world_plugins/uuv_world_ros_plugins_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'uuv_assistants' build argument 'cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'uuv_assistants' build argument 'cmake_target' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'uuv_assistants' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'uuv_assistants' build argument 'cmake_clean_cache' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'uuv_assistants' build argument 'cmake_clean_first' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'uuv_assistants' build argument 'cmake_force_configure' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'uuv_assistants' build argument 'ament_cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'uuv_assistants' build argument 'catkin_cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'uuv_assistants' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.342s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_assistants' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alex/ros2_ws/src/build/uuv_assistants', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alex/ros2_ws/src/install/uuv_assistants', 'merge_install': False, 'path': '/home/alex/ros2_ws/src/Plankton/uuv_assistants', 'symlink_install': False, 'test_result_base': None}
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'uuv_auv_control_allocator' build argument 'cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'uuv_auv_control_allocator' build argument 'cmake_target' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'uuv_auv_control_allocator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'uuv_auv_control_allocator' build argument 'cmake_clean_cache' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'uuv_auv_control_allocator' build argument 'cmake_clean_first' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'uuv_auv_control_allocator' build argument 'cmake_force_configure' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'uuv_auv_control_allocator' build argument 'ament_cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'uuv_auv_control_allocator' build argument 'catkin_cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'uuv_auv_control_allocator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.342s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_auv_control_allocator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alex/ros2_ws/src/build/uuv_auv_control_allocator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alex/ros2_ws/src/install/uuv_auv_control_allocator', 'merge_install': False, 'path': '/home/alex/ros2_ws/src/Plankton/uuv_control/uuv_auv_control_allocator', 'symlink_install': False, 'test_result_base': None}
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'uuv_control_cascaded_pid' build argument 'cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'uuv_control_cascaded_pid' build argument 'cmake_target' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'uuv_control_cascaded_pid' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'uuv_control_cascaded_pid' build argument 'cmake_clean_cache' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'uuv_control_cascaded_pid' build argument 'cmake_clean_first' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'uuv_control_cascaded_pid' build argument 'cmake_force_configure' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'uuv_control_cascaded_pid' build argument 'ament_cmake_args' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'uuv_control_cascaded_pid' build argument 'catkin_cmake_args' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'uuv_control_cascaded_pid' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.343s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_control_cascaded_pid' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alex/ros2_ws/src/build/uuv_control_cascaded_pid', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alex/ros2_ws/src/install/uuv_control_cascaded_pid', 'merge_install': False, 'path': '/home/alex/ros2_ws/src/Plankton/uuv_control/uuv_control_cascaded_pids', 'symlink_install': False, 'test_result_base': None}
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins' build argument 'cmake_args' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins' build argument 'cmake_target' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins' build argument 'cmake_clean_cache' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins' build argument 'cmake_clean_first' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins' build argument 'cmake_force_configure' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins' build argument 'ament_cmake_args' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins' build argument 'catkin_cmake_args' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.343s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_gazebo_ros_plugins' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alex/ros2_ws/src/build/uuv_gazebo_ros_plugins', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins', 'merge_install': False, 'path': '/home/alex/ros2_ws/src/Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins', 'symlink_install': False, 'test_result_base': None}
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins' build argument 'cmake_args' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins' build argument 'cmake_target' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins' build argument 'cmake_clean_cache' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins' build argument 'cmake_clean_first' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins' build argument 'cmake_force_configure' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins' build argument 'ament_cmake_args' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins' build argument 'catkin_cmake_args' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.344s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_sensor_ros_plugins' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alex/ros2_ws/src/build/uuv_sensor_ros_plugins', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alex/ros2_ws/src/install/uuv_sensor_ros_plugins', 'merge_install': False, 'path': '/home/alex/ros2_ws/src/Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins', 'symlink_install': False, 'test_result_base': None}
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_ros_plugins' build argument 'cmake_args' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_ros_plugins' build argument 'cmake_target' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_ros_plugins' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_ros_plugins' build argument 'cmake_clean_cache' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_ros_plugins' build argument 'cmake_clean_first' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_ros_plugins' build argument 'cmake_force_configure' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_ros_plugins' build argument 'ament_cmake_args' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_ros_plugins' build argument 'catkin_cmake_args' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_ros_plugins' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.344s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_world_ros_plugins' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alex/ros2_ws/src/build/uuv_world_ros_plugins', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alex/ros2_ws/src/install/uuv_world_ros_plugins', 'merge_install': False, 'path': '/home/alex/ros2_ws/src/Plankton/uuv_world_plugins/uuv_world_ros_plugins', 'symlink_install': False, 'test_result_base': None}
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'uuv_descriptions' build argument 'cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'uuv_descriptions' build argument 'cmake_target' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'uuv_descriptions' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'uuv_descriptions' build argument 'cmake_clean_cache' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'uuv_descriptions' build argument 'cmake_clean_first' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'uuv_descriptions' build argument 'cmake_force_configure' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'uuv_descriptions' build argument 'ament_cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'uuv_descriptions' build argument 'catkin_cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'uuv_descriptions' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.345s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_descriptions' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alex/ros2_ws/src/build/uuv_descriptions', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alex/ros2_ws/src/install/uuv_descriptions', 'merge_install': False, 'path': '/home/alex/ros2_ws/src/Plankton/uuv_descriptions', 'symlink_install': False, 'test_result_base': None}
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'uuv_thruster_manager' build argument 'cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'uuv_thruster_manager' build argument 'cmake_target' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'uuv_thruster_manager' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'uuv_thruster_manager' build argument 'cmake_clean_cache' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'uuv_thruster_manager' build argument 'cmake_clean_first' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'uuv_thruster_manager' build argument 'cmake_force_configure' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'uuv_thruster_manager' build argument 'ament_cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'uuv_thruster_manager' build argument 'catkin_cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'uuv_thruster_manager' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.345s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_thruster_manager' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alex/ros2_ws/src/build/uuv_thruster_manager', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alex/ros2_ws/src/install/uuv_thruster_manager', 'merge_install': False, 'path': '/home/alex/ros2_ws/src/Plankton/uuv_control/uuv_thruster_manager', 'symlink_install': False, 'test_result_base': None}
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'uuv_trajectory_control' build argument 'cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'uuv_trajectory_control' build argument 'cmake_target' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'uuv_trajectory_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'uuv_trajectory_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'uuv_trajectory_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'uuv_trajectory_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'uuv_trajectory_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'uuv_trajectory_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'uuv_trajectory_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.346s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_trajectory_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alex/ros2_ws/src/build/uuv_trajectory_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alex/ros2_ws/src/install/uuv_trajectory_control', 'merge_install': False, 'path': '/home/alex/ros2_ws/src/Plankton/uuv_control/uuv_trajectory_control', 'symlink_install': False, 'test_result_base': None}
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'uuv_control_utils' build argument 'cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'uuv_control_utils' build argument 'cmake_target' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'uuv_control_utils' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'uuv_control_utils' build argument 'cmake_clean_cache' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'uuv_control_utils' build argument 'cmake_clean_first' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'uuv_control_utils' build argument 'cmake_force_configure' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'uuv_control_utils' build argument 'ament_cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'uuv_control_utils' build argument 'catkin_cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'uuv_control_utils' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.346s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_control_utils' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alex/ros2_ws/src/build/uuv_control_utils', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alex/ros2_ws/src/install/uuv_control_utils', 'merge_install': False, 'path': '/home/alex/ros2_ws/src/Plankton/uuv_control/uuv_control_utils', 'symlink_install': False, 'test_result_base': None}
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'uuv_teleop' build argument 'cmake_args' from command line to 'None'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'uuv_teleop' build argument 'cmake_target' from command line to 'None'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'uuv_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'uuv_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'uuv_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'uuv_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'uuv_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'uuv_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'uuv_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.347s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alex/ros2_ws/src/build/uuv_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alex/ros2_ws/src/install/uuv_teleop', 'merge_install': False, 'path': '/home/alex/ros2_ws/src/Plankton/uuv_teleop', 'symlink_install': False, 'test_result_base': None}
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'uuv_simulator' build argument 'cmake_args' from command line to 'None'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'uuv_simulator' build argument 'cmake_target' from command line to 'None'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'uuv_simulator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'uuv_simulator' build argument 'cmake_clean_cache' from command line to 'False'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'uuv_simulator' build argument 'cmake_clean_first' from command line to 'False'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'uuv_simulator' build argument 'cmake_force_configure' from command line to 'False'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'uuv_simulator' build argument 'ament_cmake_args' from command line to 'None'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'uuv_simulator' build argument 'catkin_cmake_args' from command line to 'None'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'uuv_simulator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.347s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_simulator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alex/ros2_ws/src/build/uuv_simulator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alex/ros2_ws/src/install/uuv_simulator', 'merge_install': False, 'path': '/home/alex/ros2_ws/src/Plankton/uuv_simulator', 'symlink_install': False, 'test_result_base': None}
+[0.348s] Level 5:colcon.colcon_core.verb:set package 'plankton' build argument 'cmake_args' from command line to 'None'
+[0.348s] Level 5:colcon.colcon_core.verb:set package 'plankton' build argument 'cmake_target' from command line to 'None'
+[0.348s] Level 5:colcon.colcon_core.verb:set package 'plankton' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.348s] Level 5:colcon.colcon_core.verb:set package 'plankton' build argument 'cmake_clean_cache' from command line to 'False'
+[0.348s] Level 5:colcon.colcon_core.verb:set package 'plankton' build argument 'cmake_clean_first' from command line to 'False'
+[0.348s] Level 5:colcon.colcon_core.verb:set package 'plankton' build argument 'cmake_force_configure' from command line to 'False'
+[0.348s] Level 5:colcon.colcon_core.verb:set package 'plankton' build argument 'ament_cmake_args' from command line to 'None'
+[0.348s] Level 5:colcon.colcon_core.verb:set package 'plankton' build argument 'catkin_cmake_args' from command line to 'None'
+[0.348s] Level 5:colcon.colcon_core.verb:set package 'plankton' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.348s] DEBUG:colcon.colcon_core.verb:Building package 'plankton' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alex/ros2_ws/src/build/plankton', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alex/ros2_ws/src/install/plankton', 'merge_install': False, 'path': '/home/alex/ros2_ws/src/Plankton/plankton', 'symlink_install': False, 'test_result_base': None}
+[0.348s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.362s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.362s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alex/ros2_ws/src/Plankton/plankton_utils' with build type 'ament_cmake'
+[0.362s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alex/ros2_ws/src/Plankton/plankton_utils'
+[0.366s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.366s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.366s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.370s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alex/ros2_ws/src/Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs' with build type 'ament_cmake'
+[0.370s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alex/ros2_ws/src/Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs'
+[0.371s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.371s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.375s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alex/ros2_ws/src/Plankton/uuv_gazebo_plugins/uuv_gazebo_plugins' with build type 'ament_cmake'
+[0.376s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alex/ros2_ws/src/Plankton/uuv_gazebo_plugins/uuv_gazebo_plugins'
+[0.376s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.376s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.381s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alex/ros2_ws/src/Plankton/uuv_control/uuv_control_msgs' with build type 'ament_cmake'
+[0.381s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alex/ros2_ws/src/Plankton/uuv_control/uuv_control_msgs'
+[0.381s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.382s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.386s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alex/ros2_ws/src/Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs' with build type 'ament_cmake'
+[0.386s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alex/ros2_ws/src/Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs'
+[0.386s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.387s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.391s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alex/ros2_ws/src/Plankton/uuv_world_plugins/uuv_world_ros_plugins_msgs' with build type 'ament_cmake'
+[0.391s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alex/ros2_ws/src/Plankton/uuv_world_plugins/uuv_world_ros_plugins_msgs'
+[0.391s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.391s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.395s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alex/ros2_ws/src/Plankton/uuv_world_plugins/uuv_world_plugins' with build type 'ament_cmake'
+[0.396s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alex/ros2_ws/src/Plankton/uuv_world_plugins/uuv_world_plugins'
+[0.396s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.396s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.400s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alex/ros2_ws/src/Plankton/uuv_gazebo' with build type 'ament_cmake'
+[0.400s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alex/ros2_ws/src/Plankton/uuv_gazebo'
+[0.401s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.401s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.404s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alex/ros2_ws/src/Plankton/uuv_gazebo_worlds' with build type 'ament_cmake'
+[0.405s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alex/ros2_ws/src/Plankton/uuv_gazebo_worlds'
+[0.405s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.405s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.420s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alex/ros2_ws/src/build/plankton_utils': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/plankton_utils -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/plankton_utils
+[0.425s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alex/ros2_ws/src/build/uuv_gazebo_ros_plugins_msgs': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins_msgs
+[0.432s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alex/ros2_ws/src/build/uuv_gazebo_plugins': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_gazebo_plugins/uuv_gazebo_plugins -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_gazebo_plugins
+[0.438s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alex/ros2_ws/src/build/uuv_control_msgs': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_control/uuv_control_msgs -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_control_msgs
+[0.444s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alex/ros2_ws/src/build/uuv_sensor_ros_plugins_msgs': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_sensor_ros_plugins_msgs
+[0.449s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alex/ros2_ws/src/build/uuv_world_ros_plugins_msgs': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_world_plugins/uuv_world_ros_plugins_msgs -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_world_ros_plugins_msgs
+[0.533s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alex/ros2_ws/src/build/uuv_world_plugins': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_world_plugins/uuv_world_plugins -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_world_plugins
+[0.538s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alex/ros2_ws/src/build/uuv_gazebo': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_gazebo -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_gazebo
+[0.547s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alex/ros2_ws/src/build/uuv_gazebo_worlds': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_gazebo_worlds -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_gazebo_worlds
+[0.620s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alex/ros2_ws/src/build/plankton_utils' returned '1': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/plankton_utils -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/plankton_utils
+[0.621s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alex/ros2_ws/src/build/uuv_gazebo_ros_plugins_msgs' returned '1': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins_msgs
+[0.621s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alex/ros2_ws/src/build/uuv_gazebo_plugins' returned '1': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_gazebo_plugins/uuv_gazebo_plugins -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_gazebo_plugins
+[0.621s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alex/ros2_ws/src/build/uuv_control_msgs' returned '1': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_control/uuv_control_msgs -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_control_msgs
+[0.622s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alex/ros2_ws/src/build/uuv_sensor_ros_plugins_msgs' returned '1': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_sensor_ros_plugins_msgs
+[0.623s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alex/ros2_ws/src/build/uuv_world_ros_plugins_msgs' returned '1': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_world_plugins/uuv_world_ros_plugins_msgs -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_world_ros_plugins_msgs
+[0.624s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alex/ros2_ws/src/build/uuv_gazebo' returned '1': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_gazebo -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_gazebo
+[0.628s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alex/ros2_ws/src/build/uuv_world_plugins' returned '1': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_world_plugins/uuv_world_plugins -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_world_plugins
+[0.635s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alex/ros2_ws/src/build/uuv_gazebo_worlds' returned '1': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_gazebo_worlds -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_gazebo_worlds
+[0.639s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(plankton_utils)
+[0.641s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/plankton_utils' for CMake module files
+[0.641s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/plankton_utils' for CMake config files
+[0.642s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/plankton_utils/bin'
+[0.642s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/plankton_utils/lib/pkgconfig/plankton_utils.pc'
+[0.643s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/plankton_utils/lib/python3.8/site-packages'
+[0.643s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/plankton_utils/bin'
+[0.643s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/ros2_ws/src/install/plankton_utils/share/plankton_utils/package.ps1'
+[0.644s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alex/ros2_ws/src/install/plankton_utils/share/plankton_utils/package.dsv'
+[0.644s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/ros2_ws/src/install/plankton_utils/share/plankton_utils/package.sh'
+[0.645s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/ros2_ws/src/install/plankton_utils/share/plankton_utils/package.bash'
+[0.646s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/ros2_ws/src/install/plankton_utils/share/plankton_utils/package.zsh'
+[0.646s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alex/ros2_ws/src/install/plankton_utils/share/colcon-core/packages/plankton_utils)
+[0.647s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uuv_gazebo_ros_plugins_msgs)
+[0.647s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins_msgs' for CMake module files
+[0.648s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins_msgs' for CMake config files
+[0.648s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins_msgs/bin'
+[0.648s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins_msgs/lib/pkgconfig/uuv_gazebo_ros_plugins_msgs.pc'
+[0.648s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages'
+[0.649s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins_msgs/bin'
+[0.649s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/package.ps1'
+[0.650s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/package.dsv'
+[0.651s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/package.sh'
+[0.651s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/package.bash'
+[0.651s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/package.zsh'
+[0.651s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins_msgs/share/colcon-core/packages/uuv_gazebo_ros_plugins_msgs)
+[0.652s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uuv_gazebo_plugins)
+[0.652s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_gazebo_plugins' for CMake module files
+[0.654s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_gazebo_plugins' for CMake config files
+[0.654s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_gazebo_plugins/bin'
+[0.654s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_gazebo_plugins/lib/pkgconfig/uuv_gazebo_plugins.pc'
+[0.655s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_gazebo_plugins/lib/python3.8/site-packages'
+[0.655s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_gazebo_plugins/bin'
+[0.655s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/ros2_ws/src/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/package.ps1'
+[0.657s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alex/ros2_ws/src/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/package.dsv'
+[0.657s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/ros2_ws/src/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/package.sh'
+[0.657s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/ros2_ws/src/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/package.bash'
+[0.658s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/ros2_ws/src/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/package.zsh'
+[0.658s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alex/ros2_ws/src/install/uuv_gazebo_plugins/share/colcon-core/packages/uuv_gazebo_plugins)
+[0.658s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uuv_control_msgs)
+[0.659s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_control_msgs' for CMake module files
+[0.660s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_control_msgs' for CMake config files
+[0.661s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_control_msgs/bin'
+[0.661s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_control_msgs/lib/pkgconfig/uuv_control_msgs.pc'
+[0.661s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_control_msgs/lib/python3.8/site-packages'
+[0.661s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_control_msgs/bin'
+[0.662s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/ros2_ws/src/install/uuv_control_msgs/share/uuv_control_msgs/package.ps1'
+[0.663s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alex/ros2_ws/src/install/uuv_control_msgs/share/uuv_control_msgs/package.dsv'
+[0.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/ros2_ws/src/install/uuv_control_msgs/share/uuv_control_msgs/package.sh'
+[0.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/ros2_ws/src/install/uuv_control_msgs/share/uuv_control_msgs/package.bash'
+[0.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/ros2_ws/src/install/uuv_control_msgs/share/uuv_control_msgs/package.zsh'
+[0.665s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alex/ros2_ws/src/install/uuv_control_msgs/share/colcon-core/packages/uuv_control_msgs)
+[0.665s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uuv_sensor_ros_plugins_msgs)
+[0.666s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_sensor_ros_plugins_msgs' for CMake module files
+[0.667s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_sensor_ros_plugins_msgs' for CMake config files
+[0.667s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_sensor_ros_plugins_msgs/bin'
+[0.667s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_sensor_ros_plugins_msgs/lib/pkgconfig/uuv_sensor_ros_plugins_msgs.pc'
+[0.668s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_sensor_ros_plugins_msgs/lib/python3.8/site-packages'
+[0.668s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_sensor_ros_plugins_msgs/bin'
+[0.669s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/ros2_ws/src/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/package.ps1'
+[0.670s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alex/ros2_ws/src/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/package.dsv'
+[0.670s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/ros2_ws/src/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/package.sh'
+[0.670s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/ros2_ws/src/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/package.bash'
+[0.670s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/ros2_ws/src/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/package.zsh'
+[0.671s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alex/ros2_ws/src/install/uuv_sensor_ros_plugins_msgs/share/colcon-core/packages/uuv_sensor_ros_plugins_msgs)
+[0.671s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uuv_world_ros_plugins_msgs)
+[0.671s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_world_ros_plugins_msgs' for CMake module files
+[0.672s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_world_ros_plugins_msgs' for CMake config files
+[0.673s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_world_ros_plugins_msgs/bin'
+[0.673s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_world_ros_plugins_msgs/lib/pkgconfig/uuv_world_ros_plugins_msgs.pc'
+[0.673s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_world_ros_plugins_msgs/lib/python3.8/site-packages'
+[0.673s] Level 1:colcon.colcon_core.environment:checking '/home/alex/ros2_ws/src/install/uuv_world_ros_plugins_msgs/bin'
+[0.673s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/ros2_ws/src/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/package.ps1'
+[0.674s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alex/ros2_ws/src/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/package.dsv'
+[0.675s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/ros2_ws/src/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/package.sh'
+[0.675s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/ros2_ws/src/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/package.bash'
+[0.675s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/ros2_ws/src/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/package.zsh'
+[0.675s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alex/ros2_ws/src/install/uuv_world_ros_plugins_msgs/share/colcon-core/packages/uuv_world_ros_plugins_msgs)
+[0.688s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.688s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.688s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[0.689s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.694s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[0.695s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.695s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.695s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.701s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[0.701s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.701s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alex/ros2_ws/src/install/local_setup.ps1'
+[0.702s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/alex/ros2_ws/src/install/_local_setup_util_ps1.py'
+[0.704s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alex/ros2_ws/src/install/setup.ps1'
+[0.704s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alex/ros2_ws/src/install/local_setup.sh'
+[0.705s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/alex/ros2_ws/src/install/_local_setup_util_sh.py'
+[0.705s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alex/ros2_ws/src/install/setup.sh'
+[0.706s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alex/ros2_ws/src/install/local_setup.bash'
+[0.707s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alex/ros2_ws/src/install/setup.bash'
+[0.708s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alex/ros2_ws/src/install/local_setup.zsh'
+[0.708s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alex/ros2_ws/src/install/setup.zsh'

@@ -1,0 +1,2 @@
+Invoking command in '/home/alex/ros2_ws/src/build/uuv_gazebo_worlds': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_gazebo_worlds -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_gazebo_worlds
+Invoked command in '/home/alex/ros2_ws/src/build/uuv_gazebo_worlds' returned '1': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_gazebo_worlds -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_gazebo_worlds

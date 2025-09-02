@@ -1,0 +1,1 @@
+Invoking command in '/home/alex/ros2_ws/src/build/sam_bot_description': /usr/bin/cmake /home/alex/ros2_ws/src/sam_bot_description -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/sam_bot_description

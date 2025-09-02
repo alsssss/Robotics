@@ -1,0 +1,19 @@
+-- Configuring incomplete, errors occurred!
+See also "/home/alex/ros2_ws/src/build/uuv_world_ros_plugins_msgs/CMakeFiles/CMakeOutput.log".
+CMake Error at CMakeLists.txt:4 (find_package):
+  By not providing "Findstd_msgs.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "std_msgs",
+  but CMake did not find one.
+
+  Could not find a package configuration file provided by "std_msgs" with any
+  of the following names:
+
+    std_msgsConfig.cmake
+    std_msgs-config.cmake
+
+  Add the installation prefix of "std_msgs" to CMAKE_PREFIX_PATH or set
+  "std_msgs_DIR" to a directory containing one of the above files.  If
+  "std_msgs" provides a separate development package or SDK, be sure it has
+  been installed.
+
+

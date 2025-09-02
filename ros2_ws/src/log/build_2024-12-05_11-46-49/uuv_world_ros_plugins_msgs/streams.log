@@ -1,0 +1,35 @@
+[0.058s] Invoking command in '/home/alex/ros2_ws/src/build/uuv_world_ros_plugins_msgs': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_world_plugins/uuv_world_ros_plugins_msgs -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_world_ros_plugins_msgs
+[0.202s] -- The C compiler identification is GNU 9.4.0
+[0.281s] -- The CXX compiler identification is GNU 9.4.0
+[0.297s] -- Check for working C compiler: /usr/bin/cc
+[0.383s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.384s] -- Detecting C compiler ABI info
+[0.466s] -- Detecting C compiler ABI info - done
+[0.479s] -- Detecting C compile features
+[0.479s] -- Detecting C compile features - done
+[0.482s] -- Check for working CXX compiler: /usr/bin/c++
+[0.572s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.574s] -- Detecting CXX compiler ABI info
+[0.671s] -- Detecting CXX compiler ABI info - done
+[0.682s] -- Detecting CXX compile features
+[0.682s] -- Detecting CXX compile features - done
+[0.710s] CMake Error at CMakeLists.txt:4 (find_package):
+[0.710s]   By not providing "Findstd_msgs.cmake" in CMAKE_MODULE_PATH this project has
+[0.711s]   asked CMake to find a package configuration file provided by "std_msgs",
+[0.711s]   but CMake did not find one.
+[0.711s] 
+[0.711s]   Could not find a package configuration file provided by "std_msgs" with any
+[0.712s]   of the following names:
+[0.712s] 
+[0.712s]     std_msgsConfig.cmake
+[0.712s]     std_msgs-config.cmake
+[0.712s] 
+[0.712s]   Add the installation prefix of "std_msgs" to CMAKE_PREFIX_PATH or set
+[0.713s]   "std_msgs_DIR" to a directory containing one of the above files.  If
+[0.713s]   "std_msgs" provides a separate development package or SDK, be sure it has
+[0.713s]   been installed.
+[0.713s] 
+[0.713s] 
+[0.714s] -- Configuring incomplete, errors occurred!
+[0.714s] See also "/home/alex/ros2_ws/src/build/uuv_world_ros_plugins_msgs/CMakeFiles/CMakeOutput.log".
+[0.761s] Invoked command in '/home/alex/ros2_ws/src/build/uuv_world_ros_plugins_msgs' returned '1': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_world_plugins/uuv_world_ros_plugins_msgs -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_world_ros_plugins_msgs

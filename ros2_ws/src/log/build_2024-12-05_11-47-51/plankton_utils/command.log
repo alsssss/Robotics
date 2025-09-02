@@ -1,0 +1,2 @@
+Invoking command in '/home/alex/ros2_ws/src/build/plankton_utils': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/plankton_utils -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/plankton_utils
+Invoked command in '/home/alex/ros2_ws/src/build/plankton_utils' returned '1': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/plankton_utils -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/plankton_utils

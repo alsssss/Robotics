@@ -1,0 +1,21 @@
+[0.148s] Invoking command in '/home/alex/ros2_ws/src/build/uuv_gazebo': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_gazebo -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_gazebo
+[0.215s] CMake Error at CMakeLists.txt:4 (find_package):
+[0.215s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.216s]   has asked CMake to find a package configuration file provided by
+[0.216s]   "ament_cmake", but CMake did not find one.
+[0.217s] 
+[0.219s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.219s]   any of the following names:
+[0.219s] 
+[0.223s]     ament_cmakeConfig.cmake
+[0.224s]     ament_cmake-config.cmake
+[0.225s] 
+[0.225s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.225s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.226s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.226s]   has been installed.
+[0.226s] 
+[0.227s] 
+[0.237s] -- Configuring incomplete, errors occurred!
+[0.237s] See also "/home/alex/ros2_ws/src/build/uuv_gazebo/CMakeFiles/CMakeOutput.log".
+[0.241s] Invoked command in '/home/alex/ros2_ws/src/build/uuv_gazebo' returned '1': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_gazebo -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_gazebo

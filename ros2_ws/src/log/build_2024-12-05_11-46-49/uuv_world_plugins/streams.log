@@ -1,0 +1,35 @@
+[0.095s] Invoking command in '/home/alex/ros2_ws/src/build/uuv_world_plugins': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_world_plugins/uuv_world_plugins -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_world_plugins
+[0.194s] -- The C compiler identification is GNU 9.4.0
+[0.280s] -- The CXX compiler identification is GNU 9.4.0
+[0.293s] -- Check for working C compiler: /usr/bin/cc
+[0.380s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.381s] -- Detecting C compiler ABI info
+[0.463s] -- Detecting C compiler ABI info - done
+[0.474s] -- Detecting C compile features
+[0.474s] -- Detecting C compile features - done
+[0.478s] -- Check for working CXX compiler: /usr/bin/c++
+[0.578s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.579s] -- Detecting CXX compiler ABI info
+[0.678s] -- Detecting CXX compiler ABI info - done
+[0.692s] -- Detecting CXX compile features
+[0.705s] -- Detecting CXX compile features - done
+[0.736s] -- Configuring incomplete, errors occurred!
+[0.736s] See also "/home/alex/ros2_ws/src/build/uuv_world_plugins/CMakeFiles/CMakeOutput.log".
+[0.739s] CMake Error at CMakeLists.txt:13 (find_package):
+[0.739s]   By not providing "Findgazebo_dev.cmake" in CMAKE_MODULE_PATH this project
+[0.740s]   has asked CMake to find a package configuration file provided by
+[0.740s]   "gazebo_dev", but CMake did not find one.
+[0.740s] 
+[0.740s]   Could not find a package configuration file provided by "gazebo_dev" with
+[0.740s]   any of the following names:
+[0.741s] 
+[0.741s]     gazebo_devConfig.cmake
+[0.741s]     gazebo_dev-config.cmake
+[0.741s] 
+[0.741s]   Add the installation prefix of "gazebo_dev" to CMAKE_PREFIX_PATH or set
+[0.744s]   "gazebo_dev_DIR" to a directory containing one of the above files.  If
+[0.744s]   "gazebo_dev" provides a separate development package or SDK, be sure it has
+[0.744s]   been installed.
+[0.744s] 
+[0.744s] 
+[0.768s] Invoked command in '/home/alex/ros2_ws/src/build/uuv_world_plugins' returned '1': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_world_plugins/uuv_world_plugins -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_world_plugins

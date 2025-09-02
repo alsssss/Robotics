@@ -1,0 +1,2 @@
+Invoking command in '/home/alex/ros2_ws/src/build/uuv_sensor_ros_plugins_msgs': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_sensor_ros_plugins_msgs
+Invoked command in '/home/alex/ros2_ws/src/build/uuv_sensor_ros_plugins_msgs' returned '1': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_sensor_ros_plugins_msgs

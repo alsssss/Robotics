@@ -1,0 +1,261 @@
+[0.000000] (-) TimerEvent: {}
+[0.001509] (-) JobUnselected: {'identifier': 'sam_bot_description'}
+[0.001627] (-) JobUnselected: {'identifier': 'uuv_tutorial_disturbances'}
+[0.001674] (-) JobUnselected: {'identifier': 'uuv_tutorial_dp_controller'}
+[0.001721] (-) JobUnselected: {'identifier': 'uuv_tutorial_seabed_world'}
+[0.001768] (-) JobUnselected: {'identifier': 'uuv_tutorials'}
+[0.001818] (plankton_utils) JobQueued: {'identifier': 'plankton_utils', 'dependencies': OrderedDict()}
+[0.001869] (uuv_control_msgs) JobQueued: {'identifier': 'uuv_control_msgs', 'dependencies': OrderedDict()}
+[0.001917] (uuv_gazebo) JobQueued: {'identifier': 'uuv_gazebo', 'dependencies': OrderedDict()}
+[0.001965] (uuv_gazebo_plugins) JobQueued: {'identifier': 'uuv_gazebo_plugins', 'dependencies': OrderedDict()}
+[0.002013] (uuv_gazebo_ros_plugins_msgs) JobQueued: {'identifier': 'uuv_gazebo_ros_plugins_msgs', 'dependencies': OrderedDict()}
+[0.002061] (uuv_gazebo_worlds) JobQueued: {'identifier': 'uuv_gazebo_worlds', 'dependencies': OrderedDict()}
+[0.002109] (uuv_sensor_ros_plugins_msgs) JobQueued: {'identifier': 'uuv_sensor_ros_plugins_msgs', 'dependencies': OrderedDict()}
+[0.002161] (uuv_world_plugins) JobQueued: {'identifier': 'uuv_world_plugins', 'dependencies': OrderedDict()}
+[0.002208] (uuv_world_ros_plugins_msgs) JobQueued: {'identifier': 'uuv_world_ros_plugins_msgs', 'dependencies': OrderedDict()}
+[0.002257] (uuv_assistants) JobQueued: {'identifier': 'uuv_assistants', 'dependencies': OrderedDict([('plankton_utils', '/home/alex/ros2_ws/src/install/plankton_utils')])}
+[0.002308] (uuv_auv_control_allocator) JobQueued: {'identifier': 'uuv_auv_control_allocator', 'dependencies': OrderedDict([('plankton_utils', '/home/alex/ros2_ws/src/install/plankton_utils')])}
+[0.002357] (uuv_control_cascaded_pid) JobQueued: {'identifier': 'uuv_control_cascaded_pid', 'dependencies': OrderedDict([('plankton_utils', '/home/alex/ros2_ws/src/install/plankton_utils')])}
+[0.002407] (uuv_gazebo_ros_plugins) JobQueued: {'identifier': 'uuv_gazebo_ros_plugins', 'dependencies': OrderedDict([('uuv_gazebo_plugins', '/home/alex/ros2_ws/src/install/uuv_gazebo_plugins'), ('uuv_gazebo_ros_plugins_msgs', '/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins_msgs')])}
+[0.002460] (uuv_sensor_ros_plugins) JobQueued: {'identifier': 'uuv_sensor_ros_plugins', 'dependencies': OrderedDict([('uuv_gazebo_plugins', '/home/alex/ros2_ws/src/install/uuv_gazebo_plugins'), ('uuv_sensor_ros_plugins_msgs', '/home/alex/ros2_ws/src/install/uuv_sensor_ros_plugins_msgs')])}
+[0.002518] (uuv_world_ros_plugins) JobQueued: {'identifier': 'uuv_world_ros_plugins', 'dependencies': OrderedDict([('uuv_world_plugins', '/home/alex/ros2_ws/src/install/uuv_world_plugins'), ('uuv_world_ros_plugins_msgs', '/home/alex/ros2_ws/src/install/uuv_world_ros_plugins_msgs')])}
+[0.002568] (uuv_descriptions) JobQueued: {'identifier': 'uuv_descriptions', 'dependencies': OrderedDict([('plankton_utils', '/home/alex/ros2_ws/src/install/plankton_utils'), ('uuv_gazebo_plugins', '/home/alex/ros2_ws/src/install/uuv_gazebo_plugins'), ('uuv_gazebo_ros_plugins_msgs', '/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins_msgs'), ('uuv_sensor_ros_plugins_msgs', '/home/alex/ros2_ws/src/install/uuv_sensor_ros_plugins_msgs'), ('uuv_assistants', '/home/alex/ros2_ws/src/install/uuv_assistants'), ('uuv_gazebo_ros_plugins', '/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins'), ('uuv_sensor_ros_plugins', '/home/alex/ros2_ws/src/install/uuv_sensor_ros_plugins')])}
+[0.002627] (uuv_thruster_manager) JobQueued: {'identifier': 'uuv_thruster_manager', 'dependencies': OrderedDict([('plankton_utils', '/home/alex/ros2_ws/src/install/plankton_utils'), ('uuv_gazebo_ros_plugins_msgs', '/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins_msgs'), ('uuv_assistants', '/home/alex/ros2_ws/src/install/uuv_assistants')])}
+[0.002682] (uuv_trajectory_control) JobQueued: {'identifier': 'uuv_trajectory_control', 'dependencies': OrderedDict([('plankton_utils', '/home/alex/ros2_ws/src/install/plankton_utils'), ('uuv_control_msgs', '/home/alex/ros2_ws/src/install/uuv_control_msgs'), ('uuv_assistants', '/home/alex/ros2_ws/src/install/uuv_assistants')])}
+[0.002901] (uuv_control_utils) JobQueued: {'identifier': 'uuv_control_utils', 'dependencies': OrderedDict([('plankton_utils', '/home/alex/ros2_ws/src/install/plankton_utils'), ('uuv_control_msgs', '/home/alex/ros2_ws/src/install/uuv_control_msgs'), ('uuv_gazebo_ros_plugins_msgs', '/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins_msgs'), ('uuv_world_ros_plugins_msgs', '/home/alex/ros2_ws/src/install/uuv_world_ros_plugins_msgs'), ('uuv_assistants', '/home/alex/ros2_ws/src/install/uuv_assistants'), ('uuv_trajectory_control', '/home/alex/ros2_ws/src/install/uuv_trajectory_control')])}
+[0.002966] (uuv_teleop) JobQueued: {'identifier': 'uuv_teleop', 'dependencies': OrderedDict([('plankton_utils', '/home/alex/ros2_ws/src/install/plankton_utils'), ('uuv_gazebo_ros_plugins_msgs', '/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins_msgs'), ('uuv_assistants', '/home/alex/ros2_ws/src/install/uuv_assistants'), ('uuv_thruster_manager', '/home/alex/ros2_ws/src/install/uuv_thruster_manager')])}
+[0.003019] (uuv_simulator) JobQueued: {'identifier': 'uuv_simulator', 'dependencies': OrderedDict([('plankton_utils', '/home/alex/ros2_ws/src/install/plankton_utils'), ('uuv_control_msgs', '/home/alex/ros2_ws/src/install/uuv_control_msgs'), ('uuv_gazebo', '/home/alex/ros2_ws/src/install/uuv_gazebo'), ('uuv_gazebo_plugins', '/home/alex/ros2_ws/src/install/uuv_gazebo_plugins'), ('uuv_gazebo_ros_plugins_msgs', '/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins_msgs'), ('uuv_gazebo_worlds', '/home/alex/ros2_ws/src/install/uuv_gazebo_worlds'), ('uuv_sensor_ros_plugins_msgs', '/home/alex/ros2_ws/src/install/uuv_sensor_ros_plugins_msgs'), ('uuv_world_plugins', '/home/alex/ros2_ws/src/install/uuv_world_plugins'), ('uuv_world_ros_plugins_msgs', '/home/alex/ros2_ws/src/install/uuv_world_ros_plugins_msgs'), ('uuv_assistants', '/home/alex/ros2_ws/src/install/uuv_assistants'), ('uuv_auv_control_allocator', '/home/alex/ros2_ws/src/install/uuv_auv_control_allocator'), ('uuv_control_cascaded_pid', '/home/alex/ros2_ws/src/install/uuv_control_cascaded_pid'), ('uuv_gazebo_ros_plugins', '/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins'), ('uuv_sensor_ros_plugins', '/home/alex/ros2_ws/src/install/uuv_sensor_ros_plugins'), ('uuv_world_ros_plugins', '/home/alex/ros2_ws/src/install/uuv_world_ros_plugins'), ('uuv_descriptions', '/home/alex/ros2_ws/src/install/uuv_descriptions'), ('uuv_thruster_manager', '/home/alex/ros2_ws/src/install/uuv_thruster_manager'), ('uuv_trajectory_control', '/home/alex/ros2_ws/src/install/uuv_trajectory_control'), ('uuv_control_utils', '/home/alex/ros2_ws/src/install/uuv_control_utils'), ('uuv_teleop', '/home/alex/ros2_ws/src/install/uuv_teleop')])}
+[0.003082] (plankton) JobQueued: {'identifier': 'plankton', 'dependencies': OrderedDict([('plankton_utils', '/home/alex/ros2_ws/src/install/plankton_utils'), ('uuv_control_msgs', '/home/alex/ros2_ws/src/install/uuv_control_msgs'), ('uuv_gazebo', '/home/alex/ros2_ws/src/install/uuv_gazebo'), ('uuv_gazebo_plugins', '/home/alex/ros2_ws/src/install/uuv_gazebo_plugins'), ('uuv_gazebo_ros_plugins_msgs', '/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins_msgs'), ('uuv_gazebo_worlds', '/home/alex/ros2_ws/src/install/uuv_gazebo_worlds'), ('uuv_sensor_ros_plugins_msgs', '/home/alex/ros2_ws/src/install/uuv_sensor_ros_plugins_msgs'), ('uuv_world_plugins', '/home/alex/ros2_ws/src/install/uuv_world_plugins'), ('uuv_world_ros_plugins_msgs', '/home/alex/ros2_ws/src/install/uuv_world_ros_plugins_msgs'), ('uuv_assistants', '/home/alex/ros2_ws/src/install/uuv_assistants'), ('uuv_auv_control_allocator', '/home/alex/ros2_ws/src/install/uuv_auv_control_allocator'), ('uuv_control_cascaded_pid', '/home/alex/ros2_ws/src/install/uuv_control_cascaded_pid'), ('uuv_gazebo_ros_plugins', '/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins'), ('uuv_sensor_ros_plugins', '/home/alex/ros2_ws/src/install/uuv_sensor_ros_plugins'), ('uuv_world_ros_plugins', '/home/alex/ros2_ws/src/install/uuv_world_ros_plugins'), ('uuv_descriptions', '/home/alex/ros2_ws/src/install/uuv_descriptions'), ('uuv_thruster_manager', '/home/alex/ros2_ws/src/install/uuv_thruster_manager'), ('uuv_trajectory_control', '/home/alex/ros2_ws/src/install/uuv_trajectory_control'), ('uuv_control_utils', '/home/alex/ros2_ws/src/install/uuv_control_utils'), ('uuv_teleop', '/home/alex/ros2_ws/src/install/uuv_teleop'), ('uuv_simulator', '/home/alex/ros2_ws/src/install/uuv_simulator')])}
+[0.003186] (plankton_utils) JobStarted: {'identifier': 'plankton_utils'}
+[0.010253] (uuv_gazebo_ros_plugins_msgs) JobStarted: {'identifier': 'uuv_gazebo_ros_plugins_msgs'}
+[0.015199] (uuv_gazebo_plugins) JobStarted: {'identifier': 'uuv_gazebo_plugins'}
+[0.020897] (uuv_control_msgs) JobStarted: {'identifier': 'uuv_control_msgs'}
+[0.025957] (uuv_sensor_ros_plugins_msgs) JobStarted: {'identifier': 'uuv_sensor_ros_plugins_msgs'}
+[0.029485] (uuv_world_ros_plugins_msgs) JobStarted: {'identifier': 'uuv_world_ros_plugins_msgs'}
+[0.035184] (uuv_world_plugins) JobStarted: {'identifier': 'uuv_world_plugins'}
+[0.040281] (uuv_gazebo) JobStarted: {'identifier': 'uuv_gazebo'}
+[0.044510] (uuv_gazebo_worlds) JobStarted: {'identifier': 'uuv_gazebo_worlds'}
+[0.051870] (plankton_utils) JobProgress: {'identifier': 'plankton_utils', 'progress': 'cmake'}
+[0.053057] (plankton_utils) Command: {'cmd': ['/usr/bin/cmake', '/home/alex/ros2_ws/src/Plankton/plankton_utils', '-DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/plankton_utils'], 'cwd': '/home/alex/ros2_ws/src/build/plankton_utils', 'env': OrderedDict([('SUDO_GID', '1000'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('HOME', '/root'), ('SUDO_UID', '1000'), ('LOGNAME', 'root'), ('TERM', 'xterm-256color'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SUDO_COMMAND', '/usr/bin/colcon build --packages-up-to plankton'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'alex'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/alex/ros2_ws/src/build/plankton_utils'), ('COLCON', '1')]), 'shell': False}
+[0.059069] (uuv_gazebo_ros_plugins_msgs) JobProgress: {'identifier': 'uuv_gazebo_ros_plugins_msgs', 'progress': 'cmake'}
+[0.059664] (uuv_gazebo_ros_plugins_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/alex/ros2_ws/src/Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs', '-DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins_msgs'], 'cwd': '/home/alex/ros2_ws/src/build/uuv_gazebo_ros_plugins_msgs', 'env': OrderedDict([('SUDO_GID', '1000'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('HOME', '/root'), ('SUDO_UID', '1000'), ('LOGNAME', 'root'), ('TERM', 'xterm-256color'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SUDO_COMMAND', '/usr/bin/colcon build --packages-up-to plankton'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'alex'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/alex/ros2_ws/src/build/uuv_gazebo_ros_plugins_msgs'), ('COLCON', '1')]), 'shell': False}
+[0.064614] (uuv_gazebo_plugins) JobProgress: {'identifier': 'uuv_gazebo_plugins', 'progress': 'cmake'}
+[0.067179] (uuv_gazebo_plugins) Command: {'cmd': ['/usr/bin/cmake', '/home/alex/ros2_ws/src/Plankton/uuv_gazebo_plugins/uuv_gazebo_plugins', '-DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_gazebo_plugins'], 'cwd': '/home/alex/ros2_ws/src/build/uuv_gazebo_plugins', 'env': OrderedDict([('SUDO_GID', '1000'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('HOME', '/root'), ('SUDO_UID', '1000'), ('LOGNAME', 'root'), ('TERM', 'xterm-256color'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SUDO_COMMAND', '/usr/bin/colcon build --packages-up-to plankton'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'alex'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/alex/ros2_ws/src/build/uuv_gazebo_plugins'), ('COLCON', '1')]), 'shell': False}
+[0.071294] (uuv_control_msgs) JobProgress: {'identifier': 'uuv_control_msgs', 'progress': 'cmake'}
+[0.073725] (uuv_control_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/alex/ros2_ws/src/Plankton/uuv_control/uuv_control_msgs', '-DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_control_msgs'], 'cwd': '/home/alex/ros2_ws/src/build/uuv_control_msgs', 'env': OrderedDict([('SUDO_GID', '1000'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('HOME', '/root'), ('SUDO_UID', '1000'), ('LOGNAME', 'root'), ('TERM', 'xterm-256color'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SUDO_COMMAND', '/usr/bin/colcon build --packages-up-to plankton'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'alex'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/alex/ros2_ws/src/build/uuv_control_msgs'), ('COLCON', '1')]), 'shell': False}
+[0.077063] (uuv_sensor_ros_plugins_msgs) JobProgress: {'identifier': 'uuv_sensor_ros_plugins_msgs', 'progress': 'cmake'}
+[0.078061] (uuv_sensor_ros_plugins_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/alex/ros2_ws/src/Plankton/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs', '-DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_sensor_ros_plugins_msgs'], 'cwd': '/home/alex/ros2_ws/src/build/uuv_sensor_ros_plugins_msgs', 'env': OrderedDict([('SUDO_GID', '1000'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('HOME', '/root'), ('SUDO_UID', '1000'), ('LOGNAME', 'root'), ('TERM', 'xterm-256color'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SUDO_COMMAND', '/usr/bin/colcon build --packages-up-to plankton'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'alex'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/alex/ros2_ws/src/build/uuv_sensor_ros_plugins_msgs'), ('COLCON', '1')]), 'shell': False}
+[0.083180] (uuv_world_ros_plugins_msgs) JobProgress: {'identifier': 'uuv_world_ros_plugins_msgs', 'progress': 'cmake'}
+[0.084148] (uuv_world_ros_plugins_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/alex/ros2_ws/src/Plankton/uuv_world_plugins/uuv_world_ros_plugins_msgs', '-DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_world_ros_plugins_msgs'], 'cwd': '/home/alex/ros2_ws/src/build/uuv_world_ros_plugins_msgs', 'env': OrderedDict([('SUDO_GID', '1000'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('HOME', '/root'), ('SUDO_UID', '1000'), ('LOGNAME', 'root'), ('TERM', 'xterm-256color'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SUDO_COMMAND', '/usr/bin/colcon build --packages-up-to plankton'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'alex'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/alex/ros2_ws/src/build/uuv_world_ros_plugins_msgs'), ('COLCON', '1')]), 'shell': False}
+[0.087535] (-) TimerEvent: {}
+[0.089361] (uuv_world_plugins) JobProgress: {'identifier': 'uuv_world_plugins', 'progress': 'cmake'}
+[0.168360] (uuv_world_plugins) Command: {'cmd': ['/usr/bin/cmake', '/home/alex/ros2_ws/src/Plankton/uuv_world_plugins/uuv_world_plugins', '-DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_world_plugins'], 'cwd': '/home/alex/ros2_ws/src/build/uuv_world_plugins', 'env': OrderedDict([('SUDO_GID', '1000'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('HOME', '/root'), ('SUDO_UID', '1000'), ('LOGNAME', 'root'), ('TERM', 'xterm-256color'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SUDO_COMMAND', '/usr/bin/colcon build --packages-up-to plankton'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'alex'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/alex/ros2_ws/src/build/uuv_world_plugins'), ('COLCON', '1')]), 'shell': False}
+[0.171711] (uuv_gazebo) JobProgress: {'identifier': 'uuv_gazebo', 'progress': 'cmake'}
+[0.174058] (uuv_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/home/alex/ros2_ws/src/Plankton/uuv_gazebo', '-DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_gazebo'], 'cwd': '/home/alex/ros2_ws/src/build/uuv_gazebo', 'env': OrderedDict([('SUDO_GID', '1000'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('HOME', '/root'), ('SUDO_UID', '1000'), ('LOGNAME', 'root'), ('TERM', 'xterm-256color'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SUDO_COMMAND', '/usr/bin/colcon build --packages-up-to plankton'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'alex'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/alex/ros2_ws/src/build/uuv_gazebo'), ('COLCON', '1')]), 'shell': False}
+[0.177493] (uuv_gazebo_worlds) JobProgress: {'identifier': 'uuv_gazebo_worlds', 'progress': 'cmake'}
+[0.180136] (uuv_gazebo_worlds) Command: {'cmd': ['/usr/bin/cmake', '/home/alex/ros2_ws/src/Plankton/uuv_gazebo_worlds', '-DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_gazebo_worlds'], 'cwd': '/home/alex/ros2_ws/src/build/uuv_gazebo_worlds', 'env': OrderedDict([('SUDO_GID', '1000'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('HOME', '/root'), ('SUDO_UID', '1000'), ('LOGNAME', 'root'), ('TERM', 'xterm-256color'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SUDO_COMMAND', '/usr/bin/colcon build --packages-up-to plankton'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'alex'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/alex/ros2_ws/src/build/uuv_gazebo_worlds'), ('COLCON', '1')]), 'shell': False}
+[0.185621] (plankton_utils) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.185943] (plankton_utils) StdoutLine: {'line': b'See also "/home/alex/ros2_ws/src/build/plankton_utils/CMakeFiles/CMakeOutput.log".\n'}
+[0.186161] (plankton_utils) StderrLine: {'line': b'CMake Error at CMakeLists.txt:19 (find_package):\n'}
+[0.186694] (plankton_utils) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.186917] (plankton_utils) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.187106] (plankton_utils) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.187292] (plankton_utils) StderrLine: {'line': b'\n'}
+[0.187476] (plankton_utils) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.187652] (-) TimerEvent: {}
+[0.188128] (plankton_utils) StderrLine: {'line': b'  any of the following names:\n'}
+[0.188469] (plankton_utils) StderrLine: {'line': b'\n'}
+[0.189328] (plankton_utils) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.189567] (plankton_utils) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.190403] (plankton_utils) StderrLine: {'line': b'\n'}
+[0.190622] (plankton_utils) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.192741] (plankton_utils) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.192964] (plankton_utils) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.193161] (plankton_utils) StderrLine: {'line': b'  has been installed.\n'}
+[0.193352] (plankton_utils) StderrLine: {'line': b'\n'}
+[0.193532] (plankton_utils) StderrLine: {'line': b'\n'}
+[0.193714] (uuv_gazebo_ros_plugins_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.195140] (uuv_gazebo_ros_plugins_msgs) StdoutLine: {'line': b'See also "/home/alex/ros2_ws/src/build/uuv_gazebo_ros_plugins_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.196078] (uuv_gazebo_plugins) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.196634] (uuv_gazebo_plugins) StdoutLine: {'line': b'See also "/home/alex/ros2_ws/src/build/uuv_gazebo_plugins/CMakeFiles/CMakeOutput.log".\n'}
+[0.196880] (uuv_gazebo_ros_plugins_msgs) StderrLine: {'line': b'CMake Error at CMakeLists.txt:4 (find_package):\n'}
+[0.197446] (uuv_gazebo_ros_plugins_msgs) StderrLine: {'line': b'  By not providing "Findrosidl_default_generators.cmake" in CMAKE_MODULE_PATH\n'}
+[0.198608] (uuv_gazebo_ros_plugins_msgs) StderrLine: {'line': b'  this project has asked CMake to find a package configuration file provided\n'}
+[0.199784] (uuv_gazebo_ros_plugins_msgs) StderrLine: {'line': b'  by "rosidl_default_generators", but CMake did not find one.\n'}
+[0.202382] (uuv_gazebo_ros_plugins_msgs) StderrLine: {'line': b'\n'}
+[0.203735] (uuv_gazebo_ros_plugins_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by\n'}
+[0.204655] (uuv_gazebo_ros_plugins_msgs) StderrLine: {'line': b'  "rosidl_default_generators" with any of the following names:\n'}
+[0.204868] (uuv_gazebo_ros_plugins_msgs) StderrLine: {'line': b'\n'}
+[0.205052] (uuv_gazebo_ros_plugins_msgs) StderrLine: {'line': b'    rosidl_default_generatorsConfig.cmake\n'}
+[0.205960] (uuv_gazebo_ros_plugins_msgs) StderrLine: {'line': b'    rosidl_default_generators-config.cmake\n'}
+[0.206760] (uuv_gazebo_ros_plugins_msgs) StderrLine: {'line': b'\n'}
+[0.207097] (uuv_gazebo_ros_plugins_msgs) StderrLine: {'line': b'  Add the installation prefix of "rosidl_default_generators" to\n'}
+[0.207294] (uuv_gazebo_ros_plugins_msgs) StderrLine: {'line': b'  CMAKE_PREFIX_PATH or set "rosidl_default_generators_DIR" to a directory\n'}
+[0.207476] (uuv_gazebo_ros_plugins_msgs) StderrLine: {'line': b'  containing one of the above files.  If "rosidl_default_generators" provides\n'}
+[0.207659] (uuv_gazebo_ros_plugins_msgs) StderrLine: {'line': b'  a separate development package or SDK, be sure it has been installed.\n'}
+[0.207841] (uuv_gazebo_ros_plugins_msgs) StderrLine: {'line': b'\n'}
+[0.208022] (uuv_gazebo_ros_plugins_msgs) StderrLine: {'line': b'\n'}
+[0.208204] (uuv_control_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.211382] (uuv_control_msgs) StdoutLine: {'line': b'See also "/home/alex/ros2_ws/src/build/uuv_control_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.212336] (uuv_gazebo_plugins) StderrLine: {'line': b'CMake Error at CMakeLists.txt:3 (find_package):\n'}
+[0.212651] (uuv_gazebo_plugins) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.212827] (uuv_gazebo_plugins) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.213170] (uuv_gazebo_plugins) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.213369] (uuv_gazebo_plugins) StderrLine: {'line': b'\n'}
+[0.213551] (uuv_gazebo_plugins) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.213739] (uuv_gazebo_plugins) StderrLine: {'line': b'  any of the following names:\n'}
+[0.213925] (uuv_gazebo_plugins) StderrLine: {'line': b'\n'}
+[0.214112] (uuv_gazebo_plugins) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.214302] (uuv_gazebo_plugins) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.214931] (uuv_gazebo_plugins) StderrLine: {'line': b'\n'}
+[0.215131] (uuv_gazebo_plugins) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.215323] (uuv_gazebo_plugins) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.215508] (uuv_gazebo_plugins) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.215658] (uuv_gazebo_plugins) StderrLine: {'line': b'  has been installed.\n'}
+[0.215830] (uuv_gazebo_plugins) StderrLine: {'line': b'\n'}
+[0.215973] (uuv_gazebo_plugins) StderrLine: {'line': b'\n'}
+[0.216294] (uuv_control_msgs) StderrLine: {'line': b'CMake Error at CMakeLists.txt:9 (find_package):\n'}
+[0.216522] (uuv_control_msgs) StderrLine: {'line': b'  By not providing "Findstd_msgs.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[0.216712] (uuv_control_msgs) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "std_msgs",\n'}
+[0.216831] (uuv_control_msgs) StderrLine: {'line': b'  but CMake did not find one.\n'}
+[0.216993] (uuv_control_msgs) StderrLine: {'line': b'\n'}
+[0.217179] (uuv_control_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by "std_msgs" with any\n'}
+[0.217366] (uuv_control_msgs) StderrLine: {'line': b'  of the following names:\n'}
+[0.217553] (uuv_control_msgs) StderrLine: {'line': b'\n'}
+[0.217739] (uuv_control_msgs) StderrLine: {'line': b'    std_msgsConfig.cmake\n'}
+[0.217934] (uuv_control_msgs) StderrLine: {'line': b'    std_msgs-config.cmake\n'}
+[0.218119] (uuv_control_msgs) StderrLine: {'line': b'\n'}
+[0.218302] (uuv_control_msgs) StderrLine: {'line': b'  Add the installation prefix of "std_msgs" to CMAKE_PREFIX_PATH or set\n'}
+[0.218482] (uuv_control_msgs) StderrLine: {'line': b'  "std_msgs_DIR" to a directory containing one of the above files.  If\n'}
+[0.218664] (uuv_control_msgs) StderrLine: {'line': b'  "std_msgs" provides a separate development package or SDK, be sure it has\n'}
+[0.218850] (uuv_control_msgs) StderrLine: {'line': b'  been installed.\n'}
+[0.219035] (uuv_control_msgs) StderrLine: {'line': b'\n'}
+[0.219220] (uuv_control_msgs) StderrLine: {'line': b'\n'}
+[0.219407] (uuv_sensor_ros_plugins_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.222522] (uuv_sensor_ros_plugins_msgs) StdoutLine: {'line': b'See also "/home/alex/ros2_ws/src/build/uuv_sensor_ros_plugins_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.223035] (uuv_world_ros_plugins_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.223296] (uuv_world_ros_plugins_msgs) StdoutLine: {'line': b'See also "/home/alex/ros2_ws/src/build/uuv_world_ros_plugins_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.223458] (uuv_sensor_ros_plugins_msgs) StderrLine: {'line': b'CMake Error at CMakeLists.txt:4 (find_package):\n'}
+[0.223673] (uuv_sensor_ros_plugins_msgs) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.223836] (uuv_sensor_ros_plugins_msgs) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.224025] (uuv_sensor_ros_plugins_msgs) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.224182] (uuv_sensor_ros_plugins_msgs) StderrLine: {'line': b'\n'}
+[0.224344] (uuv_sensor_ros_plugins_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.224513] (uuv_sensor_ros_plugins_msgs) StderrLine: {'line': b'  any of the following names:\n'}
+[0.224703] (uuv_sensor_ros_plugins_msgs) StderrLine: {'line': b'\n'}
+[0.224883] (uuv_sensor_ros_plugins_msgs) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.225062] (uuv_sensor_ros_plugins_msgs) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.225248] (uuv_sensor_ros_plugins_msgs) StderrLine: {'line': b'\n'}
+[0.225426] (uuv_sensor_ros_plugins_msgs) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.225969] (uuv_sensor_ros_plugins_msgs) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.226317] (uuv_sensor_ros_plugins_msgs) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.226655] (uuv_sensor_ros_plugins_msgs) StderrLine: {'line': b'  has been installed.\n'}
+[0.226850] (uuv_sensor_ros_plugins_msgs) StderrLine: {'line': b'\n'}
+[0.227031] (uuv_sensor_ros_plugins_msgs) StderrLine: {'line': b'\n'}
+[0.227212] (uuv_world_ros_plugins_msgs) StderrLine: {'line': b'CMake Error at CMakeLists.txt:4 (find_package):\n'}
+[0.227677] (uuv_world_ros_plugins_msgs) StderrLine: {'line': b'  By not providing "Findstd_msgs.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[0.227868] (uuv_world_ros_plugins_msgs) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "std_msgs",\n'}
+[0.228054] (uuv_world_ros_plugins_msgs) StderrLine: {'line': b'  but CMake did not find one.\n'}
+[0.228214] (uuv_world_ros_plugins_msgs) StderrLine: {'line': b'\n'}
+[0.228406] (uuv_world_ros_plugins_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by "std_msgs" with any\n'}
+[0.228717] (uuv_world_ros_plugins_msgs) StderrLine: {'line': b'  of the following names:\n'}
+[0.228908] (uuv_world_ros_plugins_msgs) StderrLine: {'line': b'\n'}
+[0.229087] (uuv_world_ros_plugins_msgs) StderrLine: {'line': b'    std_msgsConfig.cmake\n'}
+[0.229265] (uuv_world_ros_plugins_msgs) StderrLine: {'line': b'    std_msgs-config.cmake\n'}
+[0.229446] (uuv_world_ros_plugins_msgs) StderrLine: {'line': b'\n'}
+[0.229632] (uuv_world_ros_plugins_msgs) StderrLine: {'line': b'  Add the installation prefix of "std_msgs" to CMAKE_PREFIX_PATH or set\n'}
+[0.229815] (uuv_world_ros_plugins_msgs) StderrLine: {'line': b'  "std_msgs_DIR" to a directory containing one of the above files.  If\n'}
+[0.229999] (uuv_world_ros_plugins_msgs) StderrLine: {'line': b'  "std_msgs" provides a separate development package or SDK, be sure it has\n'}
+[0.230180] (uuv_world_ros_plugins_msgs) StderrLine: {'line': b'  been installed.\n'}
+[0.230363] (uuv_world_ros_plugins_msgs) StderrLine: {'line': b'\n'}
+[0.230549] (uuv_world_ros_plugins_msgs) StderrLine: {'line': b'\n'}
+[0.230732] (uuv_world_plugins) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.230966] (uuv_world_plugins) StdoutLine: {'line': b'See also "/home/alex/ros2_ws/src/build/uuv_world_plugins/CMakeFiles/CMakeOutput.log".\n'}
+[0.231823] (uuv_gazebo) StderrLine: {'line': b'CMake Error at CMakeLists.txt:4 (find_package):\n'}
+[0.234675] (uuv_gazebo) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.234891] (uuv_gazebo) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.235071] (uuv_gazebo) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.235251] (uuv_gazebo) StderrLine: {'line': b'\n'}
+[0.235404] (uuv_gazebo) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.235544] (uuv_gazebo) StderrLine: {'line': b'  any of the following names:\n'}
+[0.235848] (uuv_gazebo) StderrLine: {'line': b'\n'}
+[0.236034] (uuv_gazebo) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.236213] (uuv_gazebo) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.236394] (uuv_gazebo) StderrLine: {'line': b'\n'}
+[0.236605] (uuv_gazebo) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.236782] (uuv_gazebo) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.236963] (uuv_gazebo) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.237139] (uuv_gazebo) StderrLine: {'line': b'  has been installed.\n'}
+[0.237317] (uuv_gazebo) StderrLine: {'line': b'\n'}
+[0.237493] (uuv_gazebo) StderrLine: {'line': b'\n'}
+[0.237677] (uuv_gazebo_worlds) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.239019] (uuv_gazebo_worlds) StdoutLine: {'line': b'See also "/home/alex/ros2_ws/src/build/uuv_gazebo_worlds/CMakeFiles/CMakeOutput.log".\n'}
+[0.241378] (uuv_gazebo) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.242135] (uuv_gazebo) StdoutLine: {'line': b'See also "/home/alex/ros2_ws/src/build/uuv_gazebo/CMakeFiles/CMakeOutput.log".\n'}
+[0.242807] (uuv_gazebo_worlds) StderrLine: {'line': b'CMake Error at CMakeLists.txt:4 (find_package):\n'}
+[0.243615] (uuv_gazebo_worlds) StderrLine: {'line': b'  By not providing "Findgazebo_ros.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.246231] (uuv_gazebo_worlds) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.247249] (uuv_gazebo_worlds) StderrLine: {'line': b'  "gazebo_ros", but CMake did not find one.\n'}
+[0.247468] (uuv_gazebo_worlds) StderrLine: {'line': b'\n'}
+[0.247661] (uuv_gazebo_worlds) StderrLine: {'line': b'  Could not find a package configuration file provided by "gazebo_ros" with\n'}
+[0.247850] (uuv_gazebo_worlds) StderrLine: {'line': b'  any of the following names:\n'}
+[0.248032] (uuv_gazebo_worlds) StderrLine: {'line': b'\n'}
+[0.248218] (uuv_gazebo_worlds) StderrLine: {'line': b'    gazebo_rosConfig.cmake\n'}
+[0.248399] (uuv_gazebo_worlds) StderrLine: {'line': b'    gazebo_ros-config.cmake\n'}
+[0.248587] (uuv_gazebo_worlds) StderrLine: {'line': b'\n'}
+[0.248775] (uuv_gazebo_worlds) StderrLine: {'line': b'  Add the installation prefix of "gazebo_ros" to CMAKE_PREFIX_PATH or set\n'}
+[0.248968] (uuv_gazebo_worlds) StderrLine: {'line': b'  "gazebo_ros_DIR" to a directory containing one of the above files.  If\n'}
+[0.249157] (uuv_gazebo_worlds) StderrLine: {'line': b'  "gazebo_ros" provides a separate development package or SDK, be sure it has\n'}
+[0.249346] (uuv_gazebo_worlds) StderrLine: {'line': b'  been installed.\n'}
+[0.249536] (uuv_gazebo_worlds) StderrLine: {'line': b'\n'}
+[0.249723] (uuv_gazebo_worlds) StderrLine: {'line': b'\n'}
+[0.249911] (uuv_world_plugins) StderrLine: {'line': b'CMake Error at CMakeLists.txt:13 (find_package):\n'}
+[0.250614] (uuv_world_plugins) StderrLine: {'line': b'  By not providing "Findgazebo_dev.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.253317] (uuv_world_plugins) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.254249] (uuv_world_plugins) StderrLine: {'line': b'  "gazebo_dev", but CMake did not find one.\n'}
+[0.254519] (uuv_world_plugins) StderrLine: {'line': b'\n'}
+[0.254754] (uuv_world_plugins) StderrLine: {'line': b'  Could not find a package configuration file provided by "gazebo_dev" with\n'}
+[0.255715] (uuv_world_plugins) StderrLine: {'line': b'  any of the following names:\n'}
+[0.256475] (uuv_world_plugins) StderrLine: {'line': b'\n'}
+[0.256716] (uuv_world_plugins) StderrLine: {'line': b'    gazebo_devConfig.cmake\n'}
+[0.256928] (uuv_world_plugins) StderrLine: {'line': b'    gazebo_dev-config.cmake\n'}
+[0.257135] (uuv_world_plugins) StderrLine: {'line': b'\n'}
+[0.257529] (uuv_world_plugins) StderrLine: {'line': b'  Add the installation prefix of "gazebo_dev" to CMAKE_PREFIX_PATH or set\n'}
+[0.258077] (uuv_world_plugins) StderrLine: {'line': b'  "gazebo_dev_DIR" to a directory containing one of the above files.  If\n'}
+[0.258274] (uuv_world_plugins) StderrLine: {'line': b'  "gazebo_dev" provides a separate development package or SDK, be sure it has\n'}
+[0.258469] (uuv_world_plugins) StderrLine: {'line': b'  been installed.\n'}
+[0.258710] (uuv_world_plugins) StderrLine: {'line': b'\n'}
+[0.258791] (uuv_world_plugins) StderrLine: {'line': b'\n'}
+[0.258863] (plankton_utils) CommandEnded: {'returncode': 1}
+[0.259245] (uuv_gazebo_ros_plugins_msgs) CommandEnded: {'returncode': 1}
+[0.259579] (uuv_gazebo_plugins) CommandEnded: {'returncode': 1}
+[0.259867] (uuv_control_msgs) CommandEnded: {'returncode': 1}
+[0.260140] (uuv_sensor_ros_plugins_msgs) CommandEnded: {'returncode': 1}
+[0.260423] (uuv_world_ros_plugins_msgs) CommandEnded: {'returncode': 1}
+[0.262418] (uuv_gazebo) CommandEnded: {'returncode': 1}
+[0.266345] (uuv_world_plugins) CommandEnded: {'returncode': 1}
+[0.270926] (uuv_gazebo_worlds) CommandEnded: {'returncode': 1}
+[0.286281] (plankton_utils) JobEnded: {'identifier': 'plankton_utils', 'rc': 1}
+[0.288570] (-) TimerEvent: {}
+[0.291330] (uuv_gazebo_ros_plugins_msgs) JobEnded: {'identifier': 'uuv_gazebo_ros_plugins_msgs', 'rc': 1}
+[0.297697] (uuv_gazebo_plugins) JobEnded: {'identifier': 'uuv_gazebo_plugins', 'rc': 1}
+[0.305513] (uuv_control_msgs) JobEnded: {'identifier': 'uuv_control_msgs', 'rc': 1}
+[0.310447] (uuv_sensor_ros_plugins_msgs) JobEnded: {'identifier': 'uuv_sensor_ros_plugins_msgs', 'rc': 1}
+[0.314874] (uuv_world_ros_plugins_msgs) JobEnded: {'identifier': 'uuv_world_ros_plugins_msgs', 'rc': 1}
+[0.316994] (uuv_gazebo) JobEnded: {'identifier': 'uuv_gazebo', 'rc': 'SIGINT'}
+[0.317511] (uuv_world_plugins) JobEnded: {'identifier': 'uuv_world_plugins', 'rc': 'SIGINT'}
+[0.318007] (uuv_gazebo_worlds) JobEnded: {'identifier': 'uuv_gazebo_worlds', 'rc': 'SIGINT'}
+[0.327660] (uuv_assistants) JobSkipped: {'identifier': 'uuv_assistants'}
+[0.327973] (uuv_auv_control_allocator) JobSkipped: {'identifier': 'uuv_auv_control_allocator'}
+[0.328038] (uuv_control_cascaded_pid) JobSkipped: {'identifier': 'uuv_control_cascaded_pid'}
+[0.328096] (uuv_gazebo_ros_plugins) JobSkipped: {'identifier': 'uuv_gazebo_ros_plugins'}
+[0.328146] (uuv_sensor_ros_plugins) JobSkipped: {'identifier': 'uuv_sensor_ros_plugins'}
+[0.328194] (uuv_world_ros_plugins) JobSkipped: {'identifier': 'uuv_world_ros_plugins'}
+[0.328243] (uuv_descriptions) JobSkipped: {'identifier': 'uuv_descriptions'}
+[0.328292] (uuv_thruster_manager) JobSkipped: {'identifier': 'uuv_thruster_manager'}
+[0.328340] (uuv_trajectory_control) JobSkipped: {'identifier': 'uuv_trajectory_control'}
+[0.328389] (uuv_control_utils) JobSkipped: {'identifier': 'uuv_control_utils'}
+[0.328463] (uuv_teleop) JobSkipped: {'identifier': 'uuv_teleop'}
+[0.328516] (uuv_simulator) JobSkipped: {'identifier': 'uuv_simulator'}
+[0.328565] (plankton) JobSkipped: {'identifier': 'plankton'}
+[0.328617] (-) EventReactorShutdown: {}

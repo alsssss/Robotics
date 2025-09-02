@@ -1,0 +1,34 @@
+[0.125s] Invoking command in '/home/alex/ros2_ws/src/build/sam_bot_description': /usr/bin/cmake /home/alex/ros2_ws/src/sam_bot_description -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/sam_bot_description
+[0.218s] -- The C compiler identification is GNU 9.4.0
+[0.222s] -- The CXX compiler identification is GNU 9.4.0
+[0.229s] -- Check for working C compiler: /usr/bin/cc
+[0.289s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.290s] -- Detecting C compiler ABI info
+[0.348s] -- Detecting C compiler ABI info - done
+[0.357s] -- Detecting C compile features
+[0.358s] -- Detecting C compile features - done
+[0.359s] -- Check for working CXX compiler: /usr/bin/c++
+[0.430s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.430s] -- Detecting CXX compiler ABI info
+[0.495s] -- Detecting CXX compiler ABI info - done
+[0.505s] -- Detecting CXX compile features
+[0.506s] -- Detecting CXX compile features - done
+[0.517s] CMake Error at CMakeLists.txt:19 (find_package):
+[0.517s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.517s]   has asked CMake to find a package configuration file provided by
+[0.517s]   "ament_cmake", but CMake did not find one.
+[0.517s] 
+[0.517s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.518s]   any of the following names:
+[0.518s] 
+[0.518s]     ament_cmakeConfig.cmake
+[0.518s]     ament_cmake-config.cmake
+[0.518s] 
+[0.518s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.518s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.519s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.519s]   has been installed.
+[0.519s] 
+[0.519s] 
+[0.520s] -- Configuring incomplete, errors occurred!
+[0.520s] See also "/home/alex/ros2_ws/src/build/sam_bot_description/CMakeFiles/CMakeOutput.log".

@@ -1,0 +1,21 @@
+[0.055s] Invoking command in '/home/alex/ros2_ws/src/build/uuv_world_ros_plugins_msgs': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_world_plugins/uuv_world_ros_plugins_msgs -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_world_ros_plugins_msgs
+[0.209s] -- Configuring incomplete, errors occurred!
+[0.210s] See also "/home/alex/ros2_ws/src/build/uuv_world_ros_plugins_msgs/CMakeFiles/CMakeOutput.log".
+[0.210s] CMake Error at CMakeLists.txt:4 (find_package):
+[0.210s]   By not providing "Findstd_msgs.cmake" in CMAKE_MODULE_PATH this project has
+[0.210s]   asked CMake to find a package configuration file provided by "std_msgs",
+[0.210s]   but CMake did not find one.
+[0.211s] 
+[0.211s]   Could not find a package configuration file provided by "std_msgs" with any
+[0.211s]   of the following names:
+[0.211s] 
+[0.211s]     std_msgsConfig.cmake
+[0.212s]     std_msgs-config.cmake
+[0.212s] 
+[0.212s]   Add the installation prefix of "std_msgs" to CMAKE_PREFIX_PATH or set
+[0.212s]   "std_msgs_DIR" to a directory containing one of the above files.  If
+[0.212s]   "std_msgs" provides a separate development package or SDK, be sure it has
+[0.213s]   been installed.
+[0.213s] 
+[0.213s] 
+[0.251s] Invoked command in '/home/alex/ros2_ws/src/build/uuv_world_ros_plugins_msgs' returned '1': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_world_plugins/uuv_world_ros_plugins_msgs -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_world_ros_plugins_msgs

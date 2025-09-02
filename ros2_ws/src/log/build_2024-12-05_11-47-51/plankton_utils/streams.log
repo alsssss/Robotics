@@ -1,0 +1,21 @@
+[0.052s] Invoking command in '/home/alex/ros2_ws/src/build/plankton_utils': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/plankton_utils -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/plankton_utils
+[0.193s] -- Configuring incomplete, errors occurred!
+[0.194s] See also "/home/alex/ros2_ws/src/build/plankton_utils/CMakeFiles/CMakeOutput.log".
+[0.195s] CMake Error at CMakeLists.txt:19 (find_package):
+[0.196s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.196s]   has asked CMake to find a package configuration file provided by
+[0.197s]   "ament_cmake", but CMake did not find one.
+[0.199s] 
+[0.200s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.201s]   any of the following names:
+[0.201s] 
+[0.201s]     ament_cmakeConfig.cmake
+[0.201s]     ament_cmake-config.cmake
+[0.202s] 
+[0.203s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.204s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.205s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.205s]   has been installed.
+[0.206s] 
+[0.206s] 
+[0.274s] Invoked command in '/home/alex/ros2_ws/src/build/plankton_utils' returned '1': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/plankton_utils -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/plankton_utils

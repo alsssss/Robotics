@@ -1,0 +1,2 @@
+Invoking command in '/home/alex/ros2_ws/src/build/uuv_gazebo_plugins': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_gazebo_plugins/uuv_gazebo_plugins -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_gazebo_plugins
+Invoked command in '/home/alex/ros2_ws/src/build/uuv_gazebo_plugins' returned '1': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_gazebo_plugins/uuv_gazebo_plugins -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_gazebo_plugins

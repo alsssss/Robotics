@@ -1,0 +1,21 @@
+[0.057s] Invoking command in '/home/alex/ros2_ws/src/build/uuv_gazebo_ros_plugins_msgs': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins_msgs
+[0.182s] -- Configuring incomplete, errors occurred!
+[0.184s] See also "/home/alex/ros2_ws/src/build/uuv_gazebo_ros_plugins_msgs/CMakeFiles/CMakeOutput.log".
+[0.184s] CMake Error at CMakeLists.txt:4 (find_package):
+[0.185s]   By not providing "Findrosidl_default_generators.cmake" in CMAKE_MODULE_PATH
+[0.187s]   this project has asked CMake to find a package configuration file provided
+[0.187s]   by "rosidl_default_generators", but CMake did not find one.
+[0.188s] 
+[0.188s]   Could not find a package configuration file provided by
+[0.188s]   "rosidl_default_generators" with any of the following names:
+[0.189s] 
+[0.189s]     rosidl_default_generatorsConfig.cmake
+[0.191s]     rosidl_default_generators-config.cmake
+[0.192s] 
+[0.193s]   Add the installation prefix of "rosidl_default_generators" to
+[0.196s]   CMAKE_PREFIX_PATH or set "rosidl_default_generators_DIR" to a directory
+[0.197s]   containing one of the above files.  If "rosidl_default_generators" provides
+[0.197s]   a separate development package or SDK, be sure it has been installed.
+[0.197s] 
+[0.198s] 
+[0.249s] Invoked command in '/home/alex/ros2_ws/src/build/uuv_gazebo_ros_plugins_msgs' returned '1': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/uuv_gazebo_ros_plugins_msgs

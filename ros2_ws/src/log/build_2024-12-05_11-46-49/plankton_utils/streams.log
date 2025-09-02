@@ -1,0 +1,35 @@
+[0.055s] Invoking command in '/home/alex/ros2_ws/src/build/plankton_utils': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/plankton_utils -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/plankton_utils
+[0.233s] -- The C compiler identification is GNU 9.4.0
+[0.308s] -- The CXX compiler identification is GNU 9.4.0
+[0.327s] -- Check for working C compiler: /usr/bin/cc
+[0.408s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.409s] -- Detecting C compiler ABI info
+[0.492s] -- Detecting C compiler ABI info - done
+[0.507s] -- Detecting C compile features
+[0.508s] -- Detecting C compile features - done
+[0.514s] -- Check for working CXX compiler: /usr/bin/c++
+[0.612s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.613s] -- Detecting CXX compiler ABI info
+[0.718s] -- Detecting CXX compiler ABI info - done
+[0.740s] -- Detecting CXX compile features
+[0.741s] -- Detecting CXX compile features - done
+[0.772s] CMake Error at CMakeLists.txt:19 (find_package):
+[0.772s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.772s]   has asked CMake to find a package configuration file provided by
+[0.773s]   "ament_cmake", but CMake did not find one.
+[0.773s] 
+[0.773s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.773s]   any of the following names:
+[0.773s] 
+[0.774s]     ament_cmakeConfig.cmake
+[0.774s]     ament_cmake-config.cmake
+[0.774s] 
+[0.774s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.774s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.774s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.775s]   has been installed.
+[0.775s] 
+[0.775s] 
+[0.780s] -- Configuring incomplete, errors occurred!
+[0.780s] See also "/home/alex/ros2_ws/src/build/plankton_utils/CMakeFiles/CMakeOutput.log".
+[0.799s] Invoked command in '/home/alex/ros2_ws/src/build/plankton_utils' returned '1': /usr/bin/cmake /home/alex/ros2_ws/src/Plankton/plankton_utils -DCMAKE_INSTALL_PREFIX=/home/alex/ros2_ws/src/install/plankton_utils
